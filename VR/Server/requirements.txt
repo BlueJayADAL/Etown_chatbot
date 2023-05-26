@@ -2,3 +2,4 @@ openai==0.27.7
 docx2txt==0.8
 nltk==3.8.1
 pyttsx3==2.90
+python-dotenv==1.0.0
