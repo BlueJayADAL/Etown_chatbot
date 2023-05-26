@@ -1,5 +1,14 @@
 import openai
+import os
+from dotenv import load_dotenv
 
+# Load .env file
+load_dotenv()
+
+openai.api_key = os.getenv("OpenAI_API_KEY")
+
+# Access environment variables
+value1 = os.getenv("KEY1")
 
 class GPT3:
     doc_data, type = None, None
@@ -9,8 +18,6 @@ class GPT3:
         self.doc_data = doc_data
 
     def evaluate(self, text):
-
-        openai.api_key = ''
 
         # Initialize model based on passed parameters
         if self.type == 'GPT3':
