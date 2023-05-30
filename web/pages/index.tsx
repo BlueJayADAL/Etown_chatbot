@@ -6,8 +6,6 @@ import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import LoadingDots from '@/components/ui/LoadingDots';
 import { Document } from 'langchain/document';
-// import * as mongoDB from 'mongodb';
-// import * as dotenv from 'dotenv';
 
 export default function Home() {
   const [query, setQuery] = useState<string>('');
@@ -51,8 +49,19 @@ export default function Home() {
 
     const question = query.trim(); //trim query
 
-    //----------------------------------------------------------------------------------------
     //following code will connect to Mongodb and send user questions to the database
+
+    try {
+      await fetch('/api/storeQ', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ question }),
+      });
+    } catch (e) {
+      console.error(e);
+    }
 
     //----------------------------------------------------------------------------------------
     setMessageState((state) => ({
