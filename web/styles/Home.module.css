@@ -123,10 +123,28 @@
 }
 
 .apimessage {
+  position: relative;
+  text-align: left;
   background: #5d646e;
   padding: 1.5rem;
   color: #000;
   animation: fadein 0.5s;
+}
+/* css for report button on each api message */
+.report{
+  float: right;
+  position: absolute;
+  right: 1%;
+  top: 30%;
+  background-color: #E1261c;
+  border: none;
+  border-radius: 10%;
+  color: #c8c8c8;
+  padding: 2px 8px 6px 8px;
+  text-align: center;
+  text-decoration: none;
+  /* display: inline-block; */
+  font-size: 16px;
 }
 
 @keyframes fadein {
@@ -142,6 +160,10 @@
 .usermessage,
 .usermessagewaiting {
   display: flex;
+}
+/* so the text does not go under the report button */
+.apimessage .markdownanswer p {
+  margin-right: 5%;
 }
 
 .markdownanswer {

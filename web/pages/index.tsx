@@ -128,6 +128,21 @@ export default function Home() {
       e.preventDefault();
     }
   };
+  //function that calls badResponse.js when user clicks the back response button
+  async function handleBadResponse(answer: string) {
+    try {
+      const question = history[history.length - 1][0];
+      await fetch('/api/badResponse', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ question, answer }),
+      });
+    } catch (e) {
+      console.error(e);
+    }
+  }
 
   return (
     <>
@@ -184,6 +199,14 @@ export default function Home() {
                           <ReactMarkdown linkTarget="_blank">
                             {message.message}
                           </ReactMarkdown>
+                          {message.type === 'apiMessage' && (
+                            <button
+                              className={styles.report}
+                              onClick={() => handleBadResponse(message.message)} //if the message is of type "apimessage" attach bad response button
+                            >
+                              Report
+                            </button>
+                          )}
                         </div>
                       </div>
                     </>
