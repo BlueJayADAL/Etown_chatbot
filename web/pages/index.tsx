@@ -5,7 +5,6 @@ import { Message } from '@/types/chat';
 import Image from 'next/image';
 import ReactMarkdown from 'react-markdown';
 import LoadingDots from '@/components/ui/LoadingDots';
-import { Document } from 'langchain/document';
 
 export default function Home() {
   const [query, setQuery] = useState<string>('');
@@ -15,13 +14,13 @@ export default function Home() {
     messages: Message[];
     pending?: string;
     history: [string, string][];
-    pendingSourceDocs?: Document[];
   }>({
     messages: [
       {
         message:
           'Hi, I am here to answer anything you would like to know about Etown.',
         type: 'apiMessage',
+        question: '',
       },
     ],
     history: [],
@@ -71,6 +70,7 @@ export default function Home() {
         {
           type: 'userMessage',
           message: question,
+          question: '',
         },
       ],
     }));
@@ -102,6 +102,7 @@ export default function Home() {
             {
               type: 'apiMessage',
               message: data.text,
+              question: question,
             },
           ],
           history: [...state.history, [question, data.text]],
@@ -129,9 +130,9 @@ export default function Home() {
     }
   };
   //function that calls badResponse.js when user clicks the back response button
-  async function handleBadResponse(answer: string) {
+  async function handleBadResponse(answer: string, question: string) {
     try {
-      const question = history[history.length - 1][0];
+      // const question = history[history.length - 1][0];
       await fetch('/api/badResponse', {
         method: 'POST',
         headers: {
@@ -202,7 +203,12 @@ export default function Home() {
                           {message.type === 'apiMessage' && (
                             <button
                               className={styles.report}
-                              onClick={() => handleBadResponse(message.message)} //if the message is of type "apimessage" attach bad response button
+                              onClick={() =>
+                                handleBadResponse(
+                                  message.message,
+                                  message.question,
+                                )
+                              } //if the message is of type "apimessage" attach bad response button
                             >
                               Report
                             </button>
