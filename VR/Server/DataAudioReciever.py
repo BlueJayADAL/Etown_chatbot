@@ -150,41 +150,44 @@ class GPT3:
             return response['answers'][0]
 # Set up the socket and start listening for audio data
 model=GPT3
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.bind((HOST, PORT))
+while(True):
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.bind((HOST, PORT))
 
-    s.listen(1)
-    print(f"Listening on {HOST}:{PORT}...")
+        s.listen(1)
+        print(f"Listening on {HOST}:{PORT}...")
 
-    client_socket, addr = s.accept()
-    print(f"Connection from {addr} established")
-    audio_data = None
-    data=None
-    audio_data = b""   
-    while True:
-        data = client_socket.recv(1024)
-        if not data:
-            break
-        audio_data += data
-    #print(audio_data)
-    text= listen(model,True,False,audio_data)
-    TexttoSpeech(text)
- #   text = convert_audio_to_text(audio_data)
+        client_socket, addr = s.accept()
+        print(f"Connection from {addr} established")
+        audio_data = None
+        data=None
+        audio_data = b""   
+        while True:
+            data = client_socket.recv(1024)
+            if not data:
+                break
+            audio_data += data
+        #print(audio_data)
+        text= listen(model,True,False,audio_data)
+        TexttoSpeech(text)
+    #   text = convert_audio_to_text(audio_data)
 
-    print(f"Received audio: {text}")
-with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
-    server_socket.bind((HOST, PORT))
-    server_socket.listen(1)
-    print(f"Listening on {HOST}:{PORT}...")
-    file_data = None
-    client_socket, addr = server_socket.accept()
-    print(f"Connection from {addr} established")
-    with open("sendfile.wav", 'rb') as file:
-    # Read the contents of the file
-        file_data = file.read()
-    file_size = len(file_data)
-    
+        print(f"Received audio: {text}")
+    client_socket.close()
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
+        server_socket.bind((HOST, PORT))
+        server_socket.listen(1)
+        print(f"Listening on {HOST}:{PORT}...")
+        file_data = None
+        client_socket, addr = server_socket.accept()
+        print(f"Connection from {addr} established")
+        with open("sendfile.wav", 'rb') as file:
+        # Read the contents of the file
+            file_data = file.read()
+        file_size = len(file_data)
+        
 
-    print(str(file_size))    
-    # Send the file data to the client
-    client_socket.sendall(file_data)
+        print(str(file_size))    
+        # Send the file data to the client
+        client_socket.sendall(file_data)
+    client_socket.close()

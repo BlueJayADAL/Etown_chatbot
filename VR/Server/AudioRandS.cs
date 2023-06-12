@@ -8,10 +8,14 @@ using System.Threading;
 public class AudioRandS : MonoBehaviour
 {
     private const int SampleRate = 44100;
+    private string wavFilePath; // Path to the .wav file
+  //  public AudioClip Clip;
+  //  public AudioSource audioSource;
     private const string OutputFileName = "recorded_audio.wav";
 
     private AudioClip recordedClip;
     private bool isRecording;
+    public AudioPlayerSTT player;
 
     private void Update()
     {
@@ -56,12 +60,16 @@ private void StopRecording()
 
     // Send the WAV data over a socket
     SendAudioData(wavData);
-    Thread.Sleep(5000);
+    Thread.Sleep(15000);
     // Receive the WAV data from the socket
     byte[] receivedData = ReceiveAudioData();
 
     // Save the received WAV data as a file
+    
     SaveAsWavFile(receivedData, OutputFileName);
+    //Thread.Sleep(15000);
+
+    
 }
 
 private void SendAudioData(byte[] data)
@@ -206,12 +214,48 @@ private byte[] ReceiveAudioData()
     }
     private void SaveAsWavFile(byte[] wavData, string fileName)
     {
-        // Write the byte array to a file
-        File.WriteAllBytes(fileName, wavData);
+ 
 
-        Debug.Log($"Saved audio data to {fileName}");
+        // Get the program's directory path
+        string programDirectory = Application.persistentDataPath;
+        Debug.Log(programDirectory);
+        Debug.Log(fileName);
+        // Combine the program's directory path with the desired file name
+        string filePath = programDirectory+"/"+ fileName;
+
+        // Write the byte array to a file
+        File.WriteAllBytes(filePath, wavData);
+        wavFilePath=filePath;
+        Debug.Log($"Saved audio data to {fileName} @ {wavFilePath}");
+        Thread.Sleep(5000);
+        player.Play();
+    }
+ private void PlayAudio()
+    {
+        //audioSource = GetComponent<AudioSource>();
+
+        // Load the .wav file as an AudioClip
+       // AudioClip audioClip = LoadAudioClip(wavFilePath);
+
+        // Assign the AudioClip to the AudioSource component
+       // audioSource.clip = Clip;
+
+        // Play the audio
+        //audioSource.Play();
     }
 
+    private AudioClip LoadAudioClip(string filePath)
+    {
+        // Load the .wav file as an AudioClip
+        AudioClip audioClip = Resources.Load<AudioClip>(filePath);
+
+        if (audioClip == null)
+        {
+            Debug.LogError($"Failed to load audio clip at path: {filePath}");
+        }
+
+        return audioClip;
+    }
 
 
 
