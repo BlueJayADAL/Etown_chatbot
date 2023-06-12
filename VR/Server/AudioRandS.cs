@@ -60,10 +60,19 @@ private void StopRecording()
 
     // Send the WAV data over a socket
     SendAudioData(wavData);
-    Thread.Sleep(15000);
+   // Thread.Sleep(15000);
     // Receive the WAV data from the socket
-    byte[] receivedData = ReceiveAudioData();
-
+    //byte[] receivedData = ReceiveAudioData();
+    byte[] receivedData=null;
+    while(true){
+        if(receivedData==null){
+           receivedData = ReceiveAudioData();
+           Thread.Sleep(1000);
+        }
+        else{break;}
+        
+        }
+   // byte[] receivedData = ReceiveAudioData();
     // Save the received WAV data as a file
     
     SaveAsWavFile(receivedData, OutputFileName);
@@ -227,7 +236,7 @@ private byte[] ReceiveAudioData()
         File.WriteAllBytes(filePath, wavData);
         wavFilePath=filePath;
         Debug.Log($"Saved audio data to {fileName} @ {wavFilePath}");
-        Thread.Sleep(5000);
+       // Thread.Sleep(5000);
         player.Play();
     }
  private void PlayAudio()
