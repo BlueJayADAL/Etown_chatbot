@@ -5,6 +5,7 @@ using System;
 using System.IO;
 using System.Net.Sockets;
 using System.Threading;
+using UnityEngine.UI;
 public class AudioRandS : MonoBehaviour
 {
     private const int SampleRate = 44100;
@@ -12,10 +13,13 @@ public class AudioRandS : MonoBehaviour
   //  public AudioClip Clip;
   //  public AudioSource audioSource;
     private const string OutputFileName = "recorded_audio.wav";
+    public Text textField;
 
     private AudioClip recordedClip;
     private bool isRecording;
     public AudioPlayerSTT player;
+
+    private byte[] receivedData;
 
     private void Update()
     {
@@ -33,14 +37,14 @@ public class AudioRandS : MonoBehaviour
         }
     }
 
-    private void StartRecording()
+    public void StartRecording()
     {
         recordedClip = Microphone.Start(null, false, 10, SampleRate);
         isRecording = true;
         Debug.Log("Recording started...");
     }
 
-private void StopRecording()
+public void StopRecording()
 {
     if (!isRecording)
         return;
@@ -58,20 +62,25 @@ private void StopRecording()
     // Create a WAV file from the audio clip data
     byte[] wavData = ConvertToWav(samples);
 
-    // Send the WAV data over a socket
-    SendAudioData(wavData);
-   // Thread.Sleep(15000);
-    // Receive the WAV data from the socket
-    //byte[] receivedData = ReceiveAudioData();
-    byte[] receivedData=null;
-    while(true){
-        if(receivedData==null){
-           receivedData = ReceiveAudioData();
-           Thread.Sleep(1000);
-        }
-        else{break;}
-        
-        }
+    // Create separate threads for sending and receiving audio data
+    Thread sendThread = new Thread(() => SendAudioData(wavData));
+
+
+    // Start the threads
+    sendThread.Start();
+    sendThread.Join();
+    StartCoroutine(DelayedAction());
+        // Create separate threads for sending and receiving audio data
+   Thread receiveThread = new Thread(() =>
+    {
+        receivedData = ReceiveAudioData();
+          //  SaveAsWavFile(receivedData, OutputFileName);
+
+    });
+    receiveThread.Start();
+
+    // Wait for both threads to finish
+    receiveThread.Join();
    // byte[] receivedData = ReceiveAudioData();
     // Save the received WAV data as a file
     
@@ -84,7 +93,7 @@ private void StopRecording()
 private void SendAudioData(byte[] data)
 {
     // Socket configuration
-    string serverAddress = "127.0.0.1";
+    string serverAddress = "172.16.80.112";
     int serverPort = 12345;
 
     // Create a TCP client socket
@@ -115,16 +124,19 @@ private void SendAudioData(byte[] data)
 private byte[] ReceiveAudioData()
 {
     // Socket configuration
-    string serverAddress = "127.0.0.1";
-    int serverPort = 12345;
 
-    // Create a TCP client socket
-    TcpClient client = new TcpClient();
 
     byte[] receivedData = null;
-
+    while(true){
+        if(receivedData==null){
     try
     {
+            string serverAddress = "172.16.80.112";
+          int serverPort = 12345;
+
+    // Create a TCP client socket
+          TcpClient client = new TcpClient();
+
         // Connect to the server
         client.Connect(serverAddress, serverPort);
 
@@ -154,7 +166,7 @@ private byte[] ReceiveAudioData()
     {
         Debug.LogError($"Failed to receive audio data: {e.Message}");
     }
-
+        }else{return receivedData;}}
     return receivedData;
 }
     private byte[] ConvertToWav(float[] samples)
@@ -237,6 +249,7 @@ private byte[] ReceiveAudioData()
         wavFilePath=filePath;
         Debug.Log($"Saved audio data to {fileName} @ {wavFilePath}");
        // Thread.Sleep(5000);
+       textField.text = "File Saved!";
         player.Play();
     }
  private void PlayAudio()
@@ -266,19 +279,29 @@ private byte[] ReceiveAudioData()
         return audioClip;
     }
 
+    private IEnumerator DelayedAction()
+    {
+        Debug.Log("Coroutine started");
+        
 
+        yield return new WaitForSeconds(10f);
+        
+        
+        Debug.Log("Coroutine ended");
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

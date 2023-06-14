@@ -1,47 +1,63 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
+using System.IO;
 using UnityEngine;
+using UnityEngine.Networking;
+using UnityEngine.UI;
 
 public class AudioPlayerSTT : MonoBehaviour
 {
-    public string fileName = "recorded_audio.wav";
+    public string filename = "recorded_audio.wav";
     public AudioSource audioSource;
-    public SaveLoadWav saveLoadWav = new SaveLoadWav();
-    // Start is called before the first frame update
+    public Text textField;
+    public Text textField1;
+    public Text textField2;
+    public Text textField3;
+    public Text textField4;
+
     public void Play()
     {
-        /*
-        string programDirectory = Application.persistentDataPath;
-        Debug.Log(programDirectory);
-        Debug.Log(fileName);
-        // Combine the program's directory path with the desired file name
-        string filePath = programDirectory+"/"+ fileName;
+        textField1.text = "Got to here";
 
-        AudioClip audioClip = LoadAudioClip(filePath);
-        audioSource.clip = audioClip;
-
-        // Play the audio
-        audioSource.Play();
-    
-        */
-
-
-        StartCoroutine(saveLoadWav.Load(fileName, audioSource));
-
-
-    // Update is called once per frame
-  
-}
-    private AudioClip LoadAudioClip(string filePath)
-    {
-        // Load the .wav file as an AudioClip
-        AudioClip audioClip = Resources.Load<AudioClip>(filePath);
-
-        if (audioClip == null)
+        if (!string.IsNullOrEmpty(filename) && audioSource != null)
         {
-            Debug.LogError($"Failed to load audio clip at path: {filePath}");
+            textField4.text = "Attempted this path string";
+            string path = GetPath(filename);
+            Debug.Log(path);
+
+            if (File.Exists(path))
+            {
+                textField3.text = "Attempted this path exists";
+                StartCoroutine(LoadAudioClip(path));
+            }
         }
 
-        return audioClip;
+        textField2.text = "Got to here 2";
+    }
+
+    private System.Collections.IEnumerator LoadAudioClip(string path)
+    {
+        using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip("file://" + path, AudioType.WAV))
+        {
+            yield return www.SendWebRequest();
+
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                AudioClip audioClip = DownloadHandlerAudioClip.GetContent(www);
+                audioSource.clip = audioClip;
+                audioSource.Play();
+                textField.text = "Audio Played";
+            }
+            else
+            {
+                Debug.LogError($"Failed to load audio clip: {www.error}");
+            }
+        }
+    }
+
+    private string GetPath(string filename) 
+    {
+        string programDirectory = Application.persistentDataPath;
+        return programDirectory+"/"+ filename;
     }
 }
+

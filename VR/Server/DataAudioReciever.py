@@ -93,7 +93,7 @@ def listen(model1, do_voice_input, use_encoded_responses, audiodata):
     # speak(model_response)
     return model_response
 # Socket configuration
-HOST = "127.0.0.1"
+HOST = "172.16.80.112"
 PORT = 12345
  
 # Configure PocketSphinx
