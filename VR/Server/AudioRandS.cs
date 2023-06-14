@@ -39,6 +39,8 @@ public class AudioRandS : MonoBehaviour
 
     public void StartRecording()
     {
+        if (isRecording)
+             return;
         recordedClip = Microphone.Start(null, false, 10, SampleRate);
         isRecording = true;
         Debug.Log("Recording started...");

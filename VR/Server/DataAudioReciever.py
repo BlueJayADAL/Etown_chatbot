@@ -66,28 +66,28 @@ def listen(model1, do_voice_input, use_encoded_responses, audiodata):
         wav_file.setframerate(sample_rate)
         wav_file.writeframes(pcm_data)
 
+    try:
+        with sr.AudioFile('temp.wav') as audio_file:
+            audio12 = recognizer.record(audio_file)
 
-    with sr.AudioFile('temp.wav') as audio_file:
-        audio12 = recognizer.record(audio_file)
-
-        recognized_text = ''+recognizer.recognize_google(audio12, show_all=False,with_confidence=False)
-        print(recognized_text)
+            recognized_text = ''+recognizer.recognize_google(audio12, show_all=False,with_confidence=False)
+            print(recognized_text)
         #first_transcript = recognized_text['alternative'][0]['transcript']
         #print(first_transcript)
-    '''
+    
     except Exception as e:
-        model_response = "Pardon me, please say that again"
-        statement = "No Question Found!"
+        return "I'm sorry I had trouble understanding your question could you ask again?"
     except sr.UnknownValueError:
         print("Unable to recognize speech.")
     except sr.RequestError as e:
         print("Error occurred during speech recognition: {0}".format(e))
-    '''
+    
  #   print(statement)
     
     evaluation = model1.evaluate(recognized_text,recognized_text)
     model_response = dc.encode_response(evaluation) if use_encoded_responses else evaluation
-
+    if model_response==None or model_response=="" or model_response==" ":
+        model_response = "I'm sorry I couldn't understand the question"
     #Print bot response and speak back to user
     print("Bot: " + model_response + '\n')
     # speak(model_response)
