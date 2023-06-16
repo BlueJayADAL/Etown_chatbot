@@ -9,6 +9,7 @@ Chat History:
 Follow Up Input: {question}
 Standalone question:`;
 
+// const QA_PROMPT = '';
 const QA_PROMPT = `You are a helpful AI assistant for Elizabethtown College.
 If you don't know the answer, just say you don't know. DO NOT try to make up an answer.
 If the question is not related to Elizabethtown, politely respond that you are tuned to only answer questions that are related to Elizabethtown.

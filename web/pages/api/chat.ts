@@ -23,6 +23,7 @@ export default async function handler(
     return res.status(400).json({ message: 'No question in the request' });
   }
   // OpenAI recommends replacing newlines with spaces for best results
+  console.log(question);
   const sanitizedQuestion = question.trim().replaceAll('\n', ' ');
 
   try {

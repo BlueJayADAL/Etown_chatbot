@@ -38,3 +38,20 @@ next-env.d.ts
 
 #Notion_db
 /Notion_DB
+
+#alex ->
+#Dockerfile
+
+#app.yaml
+app.yaml
+
+#gcloud ignore
+.gcloudignore
+
+functions
+.firebaserc
+database.rules.json
+firebase.json
+firestore.indexes.json
+firestore.rules
+.firebase
