@@ -6,6 +6,10 @@ using System.IO;
 using System.Net.Sockets;
 using System.Threading;
 using UnityEngine.UI;
+using System.Net;
+using System.Threading.Tasks;
+
+
 public class AudioRandS : MonoBehaviour
 {
     private const int SampleRate = 44100;
@@ -19,7 +23,9 @@ public class AudioRandS : MonoBehaviour
     private bool isRecording;
     public AudioPlayerSTT player;
 
-    private byte[] receivedData;
+
+    private byte[] receivedData = null;
+    private byte[] Datamm = null;
 
     private void Update()
     {
@@ -44,9 +50,10 @@ public class AudioRandS : MonoBehaviour
         recordedClip = Microphone.Start(null, false, 10, SampleRate);
         isRecording = true;
         Debug.Log("Recording started...");
+        receivedData = null;
     }
 
-public void StopRecording()
+public async void StopRecording()
 {
     if (!isRecording)
         return;
@@ -65,112 +72,104 @@ public void StopRecording()
     byte[] wavData = ConvertToWav(samples);
 
     // Create separate threads for sending and receiving audio data
-    Thread sendThread = new Thread(() => SendAudioData(wavData));
+     // Call the SendAudioData method asynchronously and await its completion
+    Task sendTask = Task.Run(() => SendAudioData(wavData));
 
+    // Wait for SendAudioData to complete
+    sendTask.Wait();
 
-    // Start the threads
-    sendThread.Start();
-    sendThread.Join();
-    StartCoroutine(DelayedAction());
-        // Create separate threads for sending and receiving audio data
-   Thread receiveThread = new Thread(() =>
-    {
-        receivedData = ReceiveAudioData();
-          //  SaveAsWavFile(receivedData, OutputFileName);
+    // Call the ReceiveAudioData method asynchronously
+    Task receiveTask = Task.Run(() => ReceiveAudioData());
 
-    });
-    receiveThread.Start();
+    // Wait for ReceiveAudioData to complete
+    receiveTask.Wait();
 
-    // Wait for both threads to finish
-    receiveThread.Join();
-   // byte[] receivedData = ReceiveAudioData();
-    // Save the received WAV data as a file
-    
-    SaveAsWavFile(receivedData, OutputFileName);
+   // SaveAsWavFile(Datamm, OutputFileName);
     //Thread.Sleep(15000);
 
     
 }
 
-private void SendAudioData(byte[] data)
-{
-    // Socket configuration
-    string serverAddress = "172.16.80.112";
-    int serverPort = 12345;
-
-    // Create a TCP client socket
-    TcpClient client = new TcpClient();
-
-    try
+    private async void SendAudioData(byte[] data)
     {
-        // Connect to the server
-        client.Connect(serverAddress, serverPort);
+        // Socket configuration
+        string serverAddress = "172.16.80.112";
+        int serverPort = 12345;
 
-        // Get a network stream for sending data
-        NetworkStream stream = client.GetStream();
-
-        // Send the audio data
-        stream.Write(data, 0, data.Length);
-
-        // Close the stream and client socket
-        stream.Close();
-        client.Close();
-
-        Debug.Log("Audio data sent successfully.");
-    }
-    catch (Exception e)
-    {
-        Debug.LogError($"Failed to send audio data: {e.Message}");
-    }
-}
-private byte[] ReceiveAudioData()
-{
-    // Socket configuration
-
-
-    byte[] receivedData = null;
-    while(true){
-        if(receivedData==null){
-    try
-    {
-            string serverAddress = "172.16.80.112";
-          int serverPort = 12345;
-
-    // Create a TCP client socket
-          TcpClient client = new TcpClient();
-
-        // Connect to the server
-        client.Connect(serverAddress, serverPort);
-
-        // Get a network stream for receiving data
-        NetworkStream stream = client.GetStream();
-
-        // Read the audio data into a memory stream
-        MemoryStream memoryStream = new MemoryStream();
-        byte[] buffer = new byte[1024];
-        int bytesRead;
-
-        while ((bytesRead = stream.Read(buffer, 0, buffer.Length)) > 0)
+        try
         {
-            memoryStream.Write(buffer, 0, bytesRead);
+            // Create a TCP client socket
+            TcpClient client = new TcpClient();
+
+            // Connect to the server asynchronously
+            await client.ConnectAsync(IPAddress.Parse(serverAddress), serverPort);
+
+            // Get a network stream for sending data
+            NetworkStream stream = client.GetStream();
+
+            // Send the audio data asynchronously
+            await stream.WriteAsync(data, 0, data.Length);
+
+            // Close the stream and client socket
+            stream.Close();
+            client.Close();
+
+            Debug.Log("Audio data sent successfully.");
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"Failed to send audio data: {e.Message}");
+        }
+    }
+    private async void ReceiveAudioData()
+    {
+        // Socket configuration
+        string serverAddress = "172.16.80.112";
+        int serverPort = 12345;
+
+        
+        while(receivedData==null){
+        try
+        {
+            // Create a TCP client socket
+            TcpClient client = new TcpClient();
+
+            // Connect to the server asynchronously
+            await client.ConnectAsync(IPAddress.Parse(serverAddress), serverPort);
+
+            // Get a network stream for receiving data
+            NetworkStream stream = client.GetStream();
+
+            // Read the audio data into a memory stream
+            MemoryStream memoryStream = new MemoryStream();
+            byte[] buffer = new byte[1024];
+            int bytesRead;
+
+            while ((bytesRead = await stream.ReadAsync(buffer, 0, buffer.Length)) > 0)
+            {
+                memoryStream.Write(buffer, 0, bytesRead);
+            }
+
+            // Get the received audio data as bytes
+            receivedData = memoryStream.ToArray();
+
+            // Close the memory stream and client socket
+            memoryStream.Close();
+            client.Close();
+
+            Debug.Log("Audio data received successfully.");
+            Datamm = receivedData;
+            SaveAsWavFile(Datamm, OutputFileName);
+        }
+        catch (Exception e)
+        {
+            Debug.LogError($"Failed to receive audio data: {e.Message}");
         }
 
-        // Get the received audio data as bytes
-        receivedData = memoryStream.ToArray();
-
-        // Close the memory stream and client socket
-        memoryStream.Close();
-        client.Close();
-
-        Debug.Log("Audio data received successfully.");
+        
+        }
+        return;
     }
-    catch (Exception e)
-    {
-        Debug.LogError($"Failed to receive audio data: {e.Message}");
-    }
-        }else{return receivedData;}}
-    return receivedData;
-}
     private byte[] ConvertToWav(float[] samples)
     {
         MemoryStream stream = new MemoryStream();
@@ -237,8 +236,8 @@ private byte[] ReceiveAudioData()
     }
     private void SaveAsWavFile(byte[] wavData, string fileName)
     {
- 
-
+        
+       
         // Get the program's directory path
         string programDirectory = Application.persistentDataPath;
         Debug.Log(programDirectory);
@@ -247,12 +246,13 @@ private byte[] ReceiveAudioData()
         string filePath = programDirectory+"/"+ fileName;
 
         // Write the byte array to a file
-        File.WriteAllBytes(filePath, wavData);
+        File.WriteAllBytes(filePath, receivedData);
         wavFilePath=filePath;
         Debug.Log($"Saved audio data to {fileName} @ {wavFilePath}");
        // Thread.Sleep(5000);
        textField.text = "File Saved!";
         player.Play();
+           
     }
  private void PlayAudio()
     {
