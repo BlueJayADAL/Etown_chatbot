@@ -175,7 +175,8 @@
 }
 
 .markdownanswer a {
-  color: #b13a3a;
+  /* color: #b13a3a; */
+  color: #3DB5E6;
   font-weight: 500;
 }
 

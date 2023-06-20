@@ -276,7 +276,7 @@ export default function Home() {
             style={{ color: '#c8c8c8' }}
             href="https://twitter.com/mayowaoshin"
           >
-            Powered by LangChainAI. Demo built by Mayo (Twitter: @mayowaoshin).
+            Powered by LangChainAI. Etown SCARP Students.
           </a>
         </footer>
       </Layout>
