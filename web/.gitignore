@@ -55,3 +55,4 @@ firebase.json
 firestore.indexes.json
 firestore.rules
 .firebase
+intents.json

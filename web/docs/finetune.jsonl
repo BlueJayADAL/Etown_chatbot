@@ -1,0 +1,1676 @@
+// history
+{
+    "prompt": "When was Elizabethtown College founded",
+    "completion": "Elizabethtown College was founded in 1899 by Reverend Jacob G. Francis",
+    "metadata": {
+      "links": [
+        {
+          "start": 45,
+          "end": 69,
+          "url": "https://www.etown.edu/about/history/"
+        }
+      ]
+    }
+  }
+{
+    "prompt": "What is some history of Etown", 
+    "completion": "Elizabethtown College was chartered in 1899 by members of the Church of the Brethren",
+    "metadata": {
+        "links": [
+            {
+                "start": 0,
+                "end": 21,
+                "url": "https://www.etown.edu/about/history/"
+            }
+        ]
+    }
+}
+// Sports/mascot/extracurricular
+{
+    "prompt": "What division is Etown", 
+    "completion": "Elizabethtown College offers NCAA Division 3 athletics",
+    "metadata": {
+        "links": [
+            {
+                "start": 0,
+                "end": 21,
+                "url": "https://etownbluejays.com/"
+            }
+        ]
+    }
+}
+{
+    "prompt": "What sports does Etown offer", 
+    "completion": "Elizabethtown College offers 24 NCAA Division 3 sports. Feel free to check out our athletics page",
+    "metadata": {
+        "links": [
+            {
+                "start": 82,
+                "end": 96,
+                "url": "https://etownbluejays.com/"
+            }
+        ]
+    }
+}
+{
+    "prompt": "Who is the president of Etown", 
+    "completion": "Betty Riders",
+}
+{
+    "prompt": "How many students participate in sports at Etown.", 
+    "completion": "Elizabethtown sports teams consist of about 490 students and make up 30.5% of the student population",
+}
+{
+    "prompt": "How many sports teams does Etown have", 
+    "completion": "Elizabethtown offers 24 NCAA D3 sports teams and 14 intramural sports teams",
+}
+{
+    "prompt": "What colors do Etown sports teams wear", 
+    "completion": "Elizabethtown sports teams wear royal blue, white, and gray",
+}
+{
+    "prompt": "What is Etown's mascot", 
+    "completion": "We are the Elizabethtown College Bluejays"
+}
+{
+    "prompt": "What was the original mascot of Etown", 
+    "completion": "Originally known as the Elizabethtown Galloping Gray Ghosts in the 1930s, the college held a competition in 1945-1946 to rename its athletes and teams. The student body voted to adopt the Blue Jay as their new mascot"
+}
+{
+    "prompt": "What is the name of the mascot",
+    "completion": "The official mascot that you may see around campus is named Blue. In addition to Blue, the college also adopted a real blue jay named Conrad (C-Jay for short) as our unofficial mascot"
+}
+{
+    "prompt": "What extracurricular activities can I do at Etown",
+    "completion": "There are many extracurricular activities including 24 NCAA Division 3 sports, 14 Intramural sports, 81 clubs and organizations, and a variety of on campus jobs"
+}
+{
+    "prompt": "What clubs does Etown offer", 
+    "completion": "Etown offers 81 clubs and organizations. If you cannot find a club that interests you, you can always create a club. For more information check here",
+    "metadata": {
+        "links": [
+            {
+                "start": 143,
+                "end": 147,
+                "url": "https://www.etown.edu/campus-life/student-clubs.aspx"
+            }
+        ]
+    }
+}
+{
+    "prompt": "What is there to do around Etown", 
+    "completion": "If you want to find something to do outside of Etown's beautiful 204 acre campus, check out this blog",
+    "metadata": {
+        "links": [
+            {
+                "start": 96,
+                "end": 100,
+                "url": "https://www.etown.edu/blog/what-to-do-on-weekends.aspx"
+            }
+        ]
+    }
+}
+//population
+{
+    "prompt": "What is Etowns student population", 
+    "completion": "The undergrad population at Elizabethtown is about 1,700 students."
+}
+{
+    "prompt": "How many faculty members work at etown", 
+    "completion": "There are 101 full time faculty members at etown. 88.1% of full-time faculty hold a doctorate or terminal degree in their field"
+}
+{
+    "prompt": "What are the qualifications of etown professors", 
+    "completion": "88.1% of full-time faculty at our institution hold a doctorate or terminal degree in their field, and many also have real-world industry experience"
+}
+{
+    "prompt": "What is the student to faculty ratio", 
+    "completion": "The student to faculty ratio is 13:1 with the average class size being 17"
+}
+{
+    "prompt": "what is the average class size", 
+    "completion": "The average class size is 17"
+}
+{
+    "prompt": "Do professors hold office hours", 
+    "completion": "Yes, due to our smaller population your professors are typically very accessible. You can set up meetings or you can usually find your professor's office hours in the course syllabus."
+}
+{
+    "prompt": "Will I get a job", 
+    "completion": "95% of Etown graduates are employed or pursuing continuing education within one year of graduation"
+}
+{
+    "prompt": "What is the post graduation employment rate at etown", 
+    "completion": "95% of Etown graduates are employed or pursuing continuing education within one year of graduation"
+}
+{
+    "prompt": "Where do Etown Graduates end up", 
+    "completion": "95% of Etown graduates are employed or pursuing continuing education within one year of graduation"
+}
+{
+    "prompt": "Will I receive finacial aid", 
+    "completion": "96% of Etown students receive some form of financial aid"
+}
+{
+    "prompt": "How many students receive financial aid", 
+    "completion": "96% of Etown students receive some form of financial aid"
+}
+{
+    "prompt": "Are the professors good at etown", 
+    "completion": "88.1% of full-time faculty hold a doctorate or terminal degree in their field and many have real-world experience in their feild"
+}
+{
+    "prompt": "Will I like my professors", 
+    "completion": "92% of graduates had at least one faculty member who made them excited about learning"
+}
+{
+    "prompt": "Are the professors nice", 
+    "completion": "89% of graduates report their professors cared about them as a person"
+}
+{
+    "prompt": "Diversity overview", 
+    "completion": "Gender Identity: 57.9% of students identify as female, 42.1% of students identify as male, 0.1% of students identify as other. 
+    Ethnicity of Traditional Undergraduate / Degree-seeking Full-time Students:White/Caucasian: 1,330 students (83.3%), Hispanic/Latino: 113 students (7.1%), Black: 39 students (2.4%), Two or more races: 37 students (2.3%), Asian: 36 students (2.3%), Unknown: 15 students (0.9%), American Indian or Alaska Native: 2 students (0.1%)."
+}
+{
+    "prompt": "what is the diversity like at Etown", 
+    "completion": "Gender Identity: 57.9% of students identify as female, 42.1% of students identify as male, 0.1% of students identify as other. 
+    Ethnicity of Traditional Undergraduate / Degree-seeking Full-time Students:White/Caucasian: 1,330 students (83.3%), Hispanic/Latino: 113 students (7.1%), Black: 39 students (2.4%), Two or more races: 37 students (2.3%), Asian: 36 students (2.3%), Unknown: 15 students (0.9%), American Indian or Alaska Native: 2 students (0.1%)."
+}
+{
+    "prompt": "What is the gender diversity at Etown", 
+    "completion": "Gender Identity: 57.9% of students identify as female, 42.1% of students identify as male, 0.1% of students identify as other."
+}
+{
+    "prompt": "What is the racial diversity at Etown", 
+    "completion": "Ethnicity of Traditional Undergraduate / Degree-seeking Full-time Students:White/Caucasian: 1,330 students (83.3%), Hispanic/Latino: 113 students (7.1%), Black: 39 students (2.4%), Two or more races: 37 students (2.3%), Asian: 36 students (2.3%), Unknown: 15 students (0.9%), American Indian or Alaska Native: 2 students (0.1%)."
+}
+{
+    "prompt": "What states are students typically from", 
+    "completion": "Geographic breakdown percentages of traditional undergraduate, degree seeking students: Pennsylvania = 72.3%, New Jersey = 9.5%, Maryland = 8.9%, Delaware = 3.2%, New York = 1.5%"
+}
+{
+    "prompt": "What is the area like", 
+    "completion": "Elizabethtown, Pa. is located in the south central region of the state, in the northwestern corner of historic Lancaster County. 
+    Elizabethtown features small shops and chain stores, eateries and coffee shops, a movie theater, and parks and sport fields. 
+    There is also an Amish farm market within walking distance to campus. 
+    And it's no secret Elizabethtown College is a very large part of the community, offering the surrounding communities a venue for arts and cultural events. 
+    And, on many days, the aroma of chocolate fills the air because Mars Chocolate has a manufacturing facility right in town. 
+    If you're just coming to visit, the local area offers multiple lodging and dining opportunities.
+    Elizabethtown is a short drive from Hershey, Harrisburg, the city of Lancaster and PA Dutch Country; each of these neighboring cities and rural areas provide plenty of recreational, educational and entertainment opportunities. 
+    And, with an Amtrak station in town, you are only a quick train ride from major urban centers Philadelphia, Washington D.C., Baltimore, or New York City."
+}
+{
+    "prompt": "what what is there around etown", 
+    "completion": "Elizabethtown, Pa. is located in the south central region of the state, in the northwestern corner of historic Lancaster County. 
+    Elizabethtown features small shops and chain stores, eateries and coffee shops, a movie theater, and parks and sport fields. 
+    There is also an Amish farm market within walking distance to campus. 
+    And it's no secret Elizabethtown College is a very large part of the community, offering the surrounding communities a venue for arts and cultural events. 
+    And, on many days, the aroma of chocolate fills the air because Mars Chocolate has a manufacturing facility right in town. 
+    If you're just coming to visit, the local area offers multiple lodging and dining opportunities.
+    Elizabethtown is a short drive from Hershey, Harrisburg, the city of Lancaster and PA Dutch Country; each of these neighboring cities and rural areas provide plenty of recreational, educational and entertainment opportunities. 
+    And, with an Amtrak station in town, you are only a quick train ride from major urban centers Philadelphia, Washington D.C., Baltimore, or New York City."
+}
+{
+    "prompt": "Is Etown sustainable", 
+    "completion": "All major decisions at Etown are made with sustainability in mind. 
+    Elements of our efforts can be found throughout all facets of our campus community. 
+    As our college community grows and advances every year, our commitment to sustainability continues to gain momentum. 
+    We have placed a huge focus on monitoring the efficiency of our current operations in order to target our weaknesses and make improvements.
+    We welcome projects of all shapes and sizes. 
+    In the past, efforts have been led by passionate students, faculty, and staff. 
+    Projects include water conservation, energy use, and recycling initiatives. 
+    We've even implemented a bike-share program. 
+    Join us in our search for innovative ways to create a sustainable campus!"
+}
+{
+    "prompt": "Will I get a job with a good salary", 
+    "completion": "At Etown, we understand that quality and value need to go hand in hand. 
+    Our educational philosophy fosters an understanding of education for a life of purpose based on a model of student development that integrates career readiness and a commitment to civic engagement. 
+    As a result, graduates are prepared to make the world a better place and be successful while doing so. 
+    Etown delivers a high-quality, high-value education that provides the kind of earning power that ranks us among the country's highest value-added institutions with mid-career earnings 27% more than predicted."
+}
+{
+    "prompt": "How long will it take me to walk", 
+    "completion": "Our campus is relatively small so depending on your walking pace, you should be able to reach each building within 10 minutes."
+}
+{
+    "prompt": "What is the market place serving today", 
+    "completion": "Follow this link to check out the marketplace menu",
+    "metadata": {
+        "links": [
+            {
+                "start": 7,
+                "end": 11,
+                "url": "https://nutrition.etown.edu/#/ETC/menu-selection"
+            }
+        ]
+    }
+}
+{
+    "prompt": "Marketplace menu", 
+    "completion": "Follow this link to check out the marketplace menu",
+    "metadata": {
+        "links": [
+            {
+                "start": 7,
+                "end": 11,
+                "url": "https://nutrition.etown.edu/#/ETC/menu-selection"
+            }
+        ]
+    }
+}
+{
+    "prompt": "what is the dining hall menu today", 
+    "completion": "Follow this link to check out the marketplace menu",
+    "metadata": {
+        "links": [
+            {
+                "start": 7,
+                "end": 11,
+                "url": "https://nutrition.etown.edu/#/ETC/menu-selection"
+            }
+        ]
+    }
+}
+{
+    "prompt": "dining hall menu",
+    "completion": "Follow this link to check out the marketplace menu",
+    "metadata": {
+        "links": [
+            {
+                "start": 7,
+                "end": 11,
+                "url": "https://nutrition.etown.edu/#/ETC/menu-selection"
+            }
+        ]
+    }
+}
+{
+    "prompt": "Are there religious activities on campus", 
+    "completion": "Elizabethtown College supports the free expression of spirituality and/or religion for all individuals and groups. 
+    Our office strives to create a vital and vibrant atmosphere for spiritual growth and religious conversation.
+    There are many recurring and student led groups on campus for various religions.
+    For more information contact Amy Shorner-Johnson our Chaplain and Director of Spiritual and Religious Life at shornera@etown.edu"
+}
+{
+    "prompt": "What is the elevation of etown", 
+    "completion": "Etown sits about 460' above sea level"
+}
+{
+    "prompt": "What is Dr. Roy's favorite class to teach", 
+    "completion": "Dr. Roy loves to teach Stats and Methods"
+}
+{
+    "prompt": "How long is Summer break", 
+    "completion": "The spring semester tends to end in early May and the fall semester tends to begin in late August"
+}
+{
+    "prompt": "How long is Winter break", 
+    "completion": "The fall semester tends to end early December and the spring semester tends to begin mid January"
+}
+{
+    "prompt": "What is housing going to be like", 
+    "completion": "The majority of our resident students at Elizabethtown College live in one of our six traditional residence halls (Schlosser, Founders, Ober, Myer, Brinser, and Royer) or in one of our two Independent Living Units (Hackman apartments and Schrieber Quads), on campus. Our residential facilities are inclusive to all genders.
+    Residence Halls include: Standard twin bed that can be adjusted for height and typically have 33” of clearance underneath when raised to the highest, Desks: surface usually 48” x 24”, Desk chair, Dresser (Dresser drawer: 24” wide x 21” deep or; 22” wide x 20” deep and height varies), Wardrobe or closet (Closets are 46-58” wide with one shelf), Windows range from 73” x6 5”h to 82” x 64”h and come with either vinyl blinds or a rolling blind (most rooms have a rolling blind).
+    Apartments/Quads in addition to the standard residence hall furniture include: Living room couch/loveseat and/or chair, Dining table with 4 chairs"
+}
+{
+    "prompt": "how does housing selection work", 
+    "completion": "ILUs and Roommate Groups: 
+    You will be required to fill all spots in an ILU for fall semester at the time of selection.
+    Incomplete units will not be accepted.
+    ILUs do not all have the same number of bed spaces. 
+    All Hackman Apartments and Quads have 4 beds. 
+    Brinser has suites that have 2, 3, and 4 beds. 
+    The college-owned houses have 4 and 5 beds, depending on the house.
+    If, for whatever reason, someone from your roommate group no longer wishes to or is eligible to live in your chosen ILU, you may have the option to pull in another eligible roommate. 
+    It is possible that you will be assigned someone from the waitlist, depending on the time of year. 
+    
+    Single Rooms:
+    Single rooms are only available for students with a documented medical accommodation that is approved by the Office of Disability Services. 
+    The single room waitlist is managed by the Office of Disability Services.
+    
+    December Graduates:
+    If you are graduating in December, please notify your roommate(s) now. 
+    We will work to fill your space over winter break if you do not have someone to take your place.
+    
+    Graduate Student Housing:
+    On-campus housing is mandatory for undergraduate students in their first 8 semesters (4 years) on campus. 
+    5th year and Graduate Students can express interest in on-campus housing, but we cannot guarantee placement. 
+    Graduate Student housing assignments are made if there are available beds after incoming students' assignments are confirmed. 
+    Our team likely will not be able to confirm that there are beds available until August. 
+    It is important that you have a backup plan if you plan to explore living on campus as a Graduate Student. 
+    Please note, Graduate Students cannot select roommates for this option. 
+    We place Graduate Students in any beds that are available within our housing options."
+}
+{
+    "prompt": "How much does it cost to attend Etown", 
+    "completion": "Residential Annual Rate (2023-2024 academic year): Tuition, Room & Board, Meal Plan, and Comprehensive Fee comes to $49,796.
+    Commuter Annual Rate (2023-2024 academic year): Tuition and Comprehensive Fee comes to $36,842.
+    The net price is the average cost of the university after aid and scholarship funds are discounted from the total cost, which comes in at $28,717 for the average student receiving need-based aid."
+}
+{
+    "prompt": "What is the cost after aid to attend etown", 
+    "completion": "The net price is the average cost of the university after aid and scholarship funds are discounted from the total cost, which comes in at $28,717 for the average student receiving need-based aid."
+}
+{
+    "prompt": "what is the cost before aid to attend etown", 
+    "completion": "Residential Annual Rate (2023-2024 academic year): Tuition, Room & Board, Meal Plan, and Comprehensive Fee comes to $49,796.
+    Commuter Annual Rate (2023-2024 academic year): Tuition and Comprehensive Fee comes to $36,842"
+}
+{
+    "prompt": "What is a FYS", 
+    "completion": "This interdisciplinary educational experience develops skills of critical thinking and writing and broadens definitions of learning. 
+    The course is a serious academic one, and it is topical in nature, meaning that each seminar has its own emphasis. 
+    Our faculty members teach seminars on subjects of passionate interest to them, but no seminar is grounded in a particular major. 
+    Students in each seminar benefit from the support of a peer mentor—a sophomore, junior, or senior who works with the faculty to facilitate the transition from high school to college. 
+    Over the course of the semester, peer mentors lead Roundtables devoted to navigation of campus electronic resources, discernment of Strengths, utilization of course registration software, and preparation for oral presentations. 
+    Peer mentors thereby provide curricular and co-curricular foundations upon which students can rely both in the first year and beyond.
+    Each seminar also includes out-of-class learning experiences, which will expose you to educational opportunities and cultural events on campus and, in many cases, beyond Elizabethtown as well. 
+    In recent years, students have attended plays, lectures, art exhibits, and film screenings. 
+    Some instructors have taken their students to museums in Philadelphia and Washington and even hiked the Appalachian Trail. 
+    The possibilities are endless!As part of your orientation paperwork, you will select your top ten seminars from a list of approximately thirty courses. 
+    Most students who submit on time receive one of their top five choices! Each seminar is capped at sixteen students, allowing you to develop close relationships with your instructor and your peers.
+    Each year First-Year Seminar faculty nominate student papers for the Anna Carper Excellence in Library Research Award. 
+    Named in honor of Anna M. Carper `41, the college librarian from 1960 to 1986, the prize is awarded for the best research paper in First-Year Seminar. 
+    Two honorable mentions are also awarded. 
+    In 2018-2019 Olivia Moyer won the grand prize and Elizabeth LePore won an honorable mention."
+}
+{
+    "prompt": "What is a First Year Seminar", 
+    "completion": "This interdisciplinary educational experience develops skills of critical thinking and writing and broadens definitions of learning. 
+    The course is a serious academic one, and it is topical in nature, meaning that each seminar has its own emphasis. 
+    Our faculty members teach seminars on subjects of passionate interest to them, but no seminar is grounded in a particular major. 
+    Students in each seminar benefit from the support of a peer mentor—a sophomore, junior, or senior who works with the faculty to facilitate the transition from high school to college. 
+    Over the course of the semester, peer mentors lead Roundtables devoted to navigation of campus electronic resources, discernment of Strengths, utilization of course registration software, and preparation for oral presentations. 
+    Peer mentors thereby provide curricular and co-curricular foundations upon which students can rely both in the first year and beyond.
+    Each seminar also includes out-of-class learning experiences, which will expose you to educational opportunities and cultural events on campus and, in many cases, beyond Elizabethtown as well. 
+    In recent years, students have attended plays, lectures, art exhibits, and film screenings. 
+    Some instructors have taken their students to museums in Philadelphia and Washington and even hiked the Appalachian Trail. 
+    The possibilities are endless!As part of your orientation paperwork, you will select your top ten seminars from a list of approximately thirty courses. 
+    Most students who submit on time receive one of their top five choices! Each seminar is capped at sixteen students, allowing you to develop close relationships with your instructor and your peers.
+    Each year First-Year Seminar faculty nominate student papers for the Anna Carper Excellence in Library Research Award. 
+    Named in honor of Anna M. Carper `41, the college librarian from 1960 to 1986, the prize is awarded for the best research paper in First-Year Seminar. 
+    Two honorable mentions are also awarded. 
+    In 2018-2019 Olivia Moyer won the grand prize and Elizabeth LePore won an honorable mention."
+}
+{
+    "prompt": "What is your favorite color", 
+    "completion": "My favorite color is Royal Blue!"
+}
+{
+    "prompt": "Who can I call if there is an issue in the dorms", 
+    "completion": "Every residence hall will have at least one RA per floor and there is always at least one RA on call every night. If there is an issue you can contact your RA or Campus safety in the case of an emergency"
+}
+{
+    "prompt": "Does Etown have greek life", 
+    "completion": "Etown does not have greek life"
+}
+{
+    "prompt": "Does Etown have Fraternities or Sororities", 
+    "completion": "No, Etown does not have Fraternities or Sororities"
+}
+{
+    "prompt": "Does Etown have Frats", 
+    "completion": "No, Etown does not have Fraternities or Sororities"
+}
+{
+    "prompt": "Does Etown Have Sororities", 
+    "completion": "No, Etown does not have Fraternities or Sororities"
+}
+{
+    "prompt": "How big are the classes", 
+    "completion": "The average class size is less than 17 students"
+}
+{
+    "prompt": "What majors does Etown offer", 
+    "completion": "Etown offers over 150 majors. Check out https://www.etown.edu/academics/majors-minors.aspx for more information",
+    "metadata": {
+        "links": [
+            {
+                "start": 40,
+                "end": 90,
+                "url": "https://www.etown.edu/academics/majors-minors.aspx"
+            }
+        ]
+    }
+}
+{
+    "prompt": "What minors does Etown offer", 
+    "completion": "Etown offers over 150 majors. Check out https://www.etown.edu/academics/majors-minors.aspx for more information",
+    "metadata": {
+        "links": [
+            {
+                "start": 40,
+                "end": 90,
+                "url": "https://www.etown.edu/academics/majors-minors.aspx"
+            }
+        ]
+    }
+}
+{
+    "prompt": "What majors and minors does Etown offer", 
+    "completion": "Etown offers over 150 majors. Check out https://www.etown.edu/academics/majors-minors.aspx for more information",
+    "metadata": {
+        "links": [
+            {
+                "start": 40,
+                "end": 90,
+                "url": "https://www.etown.edu/academics/majors-minors.aspx"
+            }
+        ]
+    }
+}
+{
+    "prompt": "What departments or programs have the best reputation ", 
+    "completion": "Business, Management, Marketing, and Related Support Services; Health Professions and Related Programs; Biological and Biomedical Sciences; Occupational Therapy; Education; Engineering; Computer and Information Sciences and Support Services; Social Sciences; Psychology; Communications"
+}
+{
+    "prompt": "What is something unique about Etown", 
+    "completion": "For more information on this, check out: https://www.etown.edu/about/",
+    "metadata": {
+        "links": [
+            {
+                "start": 40,
+                "end": 69,
+                "url": "https://www.etown.edu/about/"
+            }
+        ]
+    }
+}
+{
+    "prompt": "What is a fun fact about Elizabethtown", 
+    "completion": "Klein Chocolate built the Klein Chocolate Co. Athletic Field on property next to its downtown plant and then sponsored a semi-pro baseball team that used the field in the 1920s.
+    In addition to playing teams around Lancaster County, the Klein Chocolate team played professional teams such as the Brooklyn Dodgers, Washington Senators and Boston Red Sox.
+    In late September 1919, Klein Chocolate defeated the Boston Red Sox 4-0 and pitcher Babe Ruth. The Red Sox stayed in Elizabethtown an extra day so they could play the Klein Chocolate team again. 
+    They won the next game."
+}
+{
+    "prompt": "What is Etown's acceptance rate", 
+    "completion": "Elizabethtown College admissions is selective with an acceptance rate of 79.5%. 
+    Half the applicants admitted to Elizabethtown College have an SAT score between 1070 and 1260 or an ACT score of 24 and 29."
+}
+{
+    "prompt": "What is the average SAT score for Etown", 
+    "completion": "Half the applicants admitted to Elizabethtown College have an SAT score between 1070 and 1260 or an ACT score of 24 and 29."
+}
+{
+    "prompt": "What is the average ACT score for Etown", 
+    "completion": "Half the applicants admitted to Elizabethtown College have an SAT score between 1070 and 1260 or an ACT score of 24 and 29."
+}
+{
+    "prompt": "What is the graduation rate", 
+    "completion": "Our four-year graduation rate is around 75% and already exceeds the national average for all schools and four-year private colleges and universities. 
+    Graduating in four years keeps your costs down and allows you to enter the job market sooner.
+    If you meet the requirements and don't graduate in four years, we will pay for the remaining credits—up to 16 in one year—needed to complete your degree."
+}
+{
+    "prompt": "Are there TAs at Etown", 
+    "completion": "Not all classes have TAs but many chemistry, biology, and engineering classes have TAs"
+}
+{
+    "prompt": "Are there teachers assistants at Etown?", 
+    "completion": "Not all classes have TAs but many chemistry, biology, and engineering classes have TAs"
+}
+{
+    "prompt": "How do I get help if I am struggling", 
+    "completion": "There are tutoring opportunites, office hours, and learning help offered for free"
+}
+{
+    "prompt": "How often are collaborative work or group presentations required?", 
+    "completion": "Most classes have some element of group work"
+}
+{
+    "prompt": "Does your major require an independent study or capstone project?", 
+    "completion": "Most majors require an signature learning experience to gradtuate, an internship counts as one of these. "
+}
+{
+    "prompt": "Are there study abroad opportunities", 
+    "completion": "Yes, Etown has a very popular study abroad program.
+    The Study Abroad Office provides guidance and support to students in all majors who want to study abroad on a semester, year, summer, winter, or faculty-led program.
+    By living in a culture fundamentally different from your own, you are exposed to new ways of thinking and challenge your preconceived notions of “normal.” While abroad, our students have the opportunity to take classes at a local university, intern at businesses within the community, and/or volunteer at various regional organizations.
+    Our alumni have continuously cited that studying abroad served as a catalyst for change and inspiration in their lives, both personally and professionally."
+}
+{
+    "prompt": "Are professors available for research with students?", 
+    "completion": "Yes, summer research (SCARP) is very popular at etown.
+    The Summer Creative Arts and Research program (SCARP) was created to support independent student research under the sponsorship of a faculty mentor. 
+    The program is a non-credit experiential learning program designed to enhance professional skills and provide a competitive advantage to participating students in the pursuit of career opportunities and graduate studies. 
+    At the same time, participating faculty scholars and researchers will benefit from student involvement in support of professional scholarship and research agendas.
+    For participating in the program, students will receive a training stipend, room and board for the duration of their projects (from 4 to 10 weeks), and a professional experience as part of a scholarship/research community. 
+    They will also benefit from highly personalized mentoring from active researchers and scholars.
+    SCARP has been approved as a supervised research option that fulfills one of the two required Signature Learning Experiences (SLE) for Elizabethtown College students."
+}
+{
+    "prompt": "What is it like to be a first year student at Etown", 
+    "completion": "Very comforting and welcoming"
+}
+{
+    "prompt": "What is a typical day like at Etown", 
+    "completion": "A typical day can involve going to class, the gym, practice, and then homework and hanging out with friends"
+}
+{
+    "prompt": "What is the food like at Etown", 
+    "completion": "The food is good and offers multiple dining areas"
+}
+{
+    "prompt": "How many students live on campus", 
+    "completion": "About 76% of students are residential students"
+}
+{
+    "prompt": "How many students are commuters", 
+    "completion": "About 24% of students are commuter students"
+}
+{
+    "prompt": "What are the requirements for being a commuter", 
+    "completion": "To be a commuter you must reside within 30 minutes or 30 miles of campus"
+}
+{
+    "prompt": "Is the wifi good at etown", 
+    "completion": "Yes the wireless is strong"
+}
+{
+    "prompt": "Is there school spirit at etown", 
+    "completion": "Yes, most Etown students are very proud to be a Blue Jay and what the college stands for."
+}
+{
+    "prompt": "How do you find internships", 
+    "completion": "The college hosts many job/career fairs and professors often email out job opportunities to the students"
+}
+{
+    "prompt": "Is the engineering program good", 
+    "completion": "Etown's Engineering program is accredited by the Engineering Accreditation Commission of ABET (http://www.abet.org). 
+    This accreditation ensures that we meet global standards for properly instructing our engineering students and allows our students to work worldwide. 
+    By completing our program, students will have met the educational requirements necessary to qualify to take the Fundamentals of Engineering exam and work towards obtaining their PE license. 
+    Etown's School of Engineering, Math, and Computer Science has been honored by the American Society for Engineering Education's (ASEE) Diversity Recognition Program. 
+    ASEE's bronze category is the highest level issued to institutions during the 2021-22 submission cycle and recognizes the School among the nation's leaders in inclusive excellence."
+}
+{
+    "prompt": "Does etown offer co op programs", 
+    "completion": "Elizabethtown College offers students interested in advanced studies in the health professions, law or education, the option to take part in special advising programs as well as participate in cooperative programs with affiliate graduate or professional schools. 
+    By combining specialized undergraduate studies at Elizabethtown with direct admission to graduate school, you can earn your advanced degree in less time than taking a traditional route, sometimes saving one to three years of study."
+}
+{
+    "prompt": "How many credits do you need to graduate from etown", 
+    "completion": "You need to comeplete 125 credits in order to graduate"
+}
+{
+    "prompt": "How many credits are classes at Etown", 
+    "completion": "Most classes are 4 credits but come classes can be as small as 1 credit"
+}
+{
+    "prompt": "Is Etown a public or private school", 
+    "completion": "Etown is a private liberal arts college"
+}
+{
+    "prompt": "Does etown have a masters program", 
+    "completion": "Yes, depending on your major Etown offers some masters programs, the most popular being Ocupational Therapy. 
+    Elizabethtown College's graduate programs are designed to meet the specific needs of busy working adults. 
+    The accelerated eight-week online courses allow you to focus on one course at a time while still completing up to 18 credits per year. 
+    There are no cohorts, meaning that you can step in and out of the program as life requires. 
+    Courses are offered an online format to accommodate your work, life and graduate school balance."
+}
+{
+    "prompt": "Can freshmen have cars on campus", 
+    "completion": "yes all students are able to buy a parking pass and keep a car on campus"
+}
+{
+    "prompt": "Can first years have cars on campus", 
+    "completion": "yes all students are able to buy a parking pass and keep a car on campus"
+}
+{
+    "prompt": "How much does parking cost", 
+    "completion": "The parking pass is $50 a semester or $100 per year"
+}
+{
+    "prompt": "Is laundry free", 
+    "completion": "It is completely free to do laundry at etown"
+}
+{
+    "prompt": "Does Etown accept high school credits", 
+    "completion": "Yes etown will accept high school and AP credits depending on the program and score"
+}
+{
+    "prompt": "Can I be undecided", 
+    "completion": "You do not need to know your major right away. You can be undecided."
+}
+{
+    "prompt": "Are there a lot of parties at Etown", 
+    "completion": "No Etown is not a big party school"
+}
+{
+    "prompt": "", 
+    "completion": ""
+}
+{
+    "prompt": "", 
+    "completion": ""
+}
+{
+    "prompt": "", 
+    "completion": ""
+}
+{
+    "prompt": "", 
+    "completion": ""
+}
+
+
+// General Building info
+
+{
+    "prompt": "What is the BSC", 
+    "completion": "The BSC is the Baugher Student Center. Located in the center of campus, the Baugher Student Center is a multipurpose facility that houses the Center for Student Success, the KAV, a variety of dining venues, mail services, the college store, student life services, the Tempest Theater, a veterans lounge, and student senate."
+}
+{
+    "prompt": "What is the Baugher Student Center", 
+    "completion": "Located in the center of campus, the Baugher Student Center is a multipurpose facility that houses the Center for Student Success, the KAV, a variety of dining venues, mail services, the college store, student life services, the Tempest Theater, a veterans lounge, and student senate."
+}
+{
+    "prompt": "What is the Jay Walk", 
+    "completion": "The Jay Walk houses offices for athletics coaches and staff, and features the Blue Jays Atheletic Hall of Fame."
+}
+{
+    "prompt": "What is Thompson Gymnasium", 
+    "completion": "Thompson Gymnasium is the home of the Blue Jays, Elizabethtown's intercollegiate athletic teams. Located in the athletic facility are basketball and volleyball courts courts, racquetball/handball courts, a swimming pool, weight training rooms, wrestling rooms, sports medicine offices, training room, weight room and locker rooms."
+}
+{
+    "prompt": "What is Leffler Chapel", 
+    "completion": "The Leffler Chapel and Performance Center is one of the most scenic, recognizable buildings on campus. 
+    The venue is the largest performance space on campus and contains two levels of seating. 
+    The space also boasts a large green room and excellent acoustics in the main hall. 
+    It is used for all major presentations and performances on campus including campus-wide lectures, worship gatherings, and musical performances. 
+    The Chapel's ornate Musser Auditorium seats 840 guests."
+}
+{
+    "prompt": "What is the Bowers Center", 
+    "completion": "The Bowers Center for Sports, Fitness and Well-Being serves as a dynamic campus hub for health and well-being at Elizabethtown College. 
+    Our state-of-the-art facility provides purposeful programming that inspires, educates, and empowers students and the campus community to cultivate healthy and active lifestyles, as well as supporting the College's expanding athletics program. 
+    Within the Bowers Center for Sports, Fitness and Well-Being is the Office of Student Activities, Well-Being and Recreation (SAWR). 
+    SAWR manages the extracurricular events and programming on campus, focusing on the holistic health of our campus community. 
+    The Bowers Center features include: Cardio, Strength & Fitness Areas, Group Fitness Rooms, Multipurpose Rooms, Athletic Training Area, Six Athletic Locker Rooms, Indoor Track, Three Multi-use Courts, Smoothie Bar, Demonstration Kitchen, Relaxation Room, Lounges with Fire Places, Outdoor Fire Pit, Outdoor Courts/Activity Areas.
+    The Fresh Nest is located on the first level of the Bowers Center and offers the E-town community with healthy food options from meal replacement smoothies to pre/post workout smoothies and featured sandwiches and salads of the day!"
+}
+{
+    "prompt": "What is the Bucher Meetinghouse", 
+    "completion": "The Young Center for Anabaptist and Pietist Studies is a premier research center. It is home to the Bucher Bookshop, the Bucher Meetinghouse and the offices of the Center's staff, scholars and visiting fellows."
+}
+{
+    "prompt": "What is the Young Center", 
+    "completion": "The Young Center for Anabaptist and Pietist Studies is a premier research center. It is home to the Bucher Bookshop, the Bucher Meetinghouse and the offices of the Center's staff, scholars and visiting fellows."
+}
+{
+    "prompt": "What is the archaeology lab", 
+    "completion": "Sociology and Anthropology students use the Public Archeology Lab for artifact processing and map and photographic analysis."
+}
+{
+    "prompt": "What is Alpha Hall", 
+    "completion": "Alpha Hall, the original building on campus, now houses many of the College's administrative offices including: Office of the President, Office of the Senior Vice President for Academic Affairs, Dean of Faculty, Marketing and Communications, V.P. for Finance, Institutional Advancement, Office of Research and Planning, Susquehanna Valley Ministry Center, Development Office"
+}
+{
+    "prompt": "What is the Bowers writers house", 
+    "completion": "The Bowers Writers House is an interdisciplinary venue for creative expression."
+}
+{
+    "prompt": "What is the campus safety center", 
+    "completion": "Campus Safety is where students, staff and faculty obtain IDs and parking permits. The building also serves as the base for campus safety officers and dispatchers."
+}
+{
+    "prompt": "What is the campus security center", 
+    "completion": "Campus Safety is where students, staff and faculty obtain IDs and parking permits. The building also serves as the base for campus safety officers and dispatchers."
+}
+{
+    "prompt": "What is the mosaic house", 
+    "completion": "The Mosaic House serves as a gathering place for students of diverse backgrounds and interests with spaces for events, meetings, studying, and lounging. Mosaic House is open Monday through Friday from 1pm to 9pm and on Sunday from 12pm to 5pm."
+}
+{
+    "prompt": "What is the President's House", 
+    "completion": "Located at 307 East College Avenue, this house serves as a living arrangement for the incumbent Elizabethtown College president"
+}
+{
+    "prompt": "What is the Leffler Admissions House", 
+    "completion": "The first stop for many of our Campus visitors is the Leffler House, which houses the Office of Admissions. Come check out our beautiful campus or take advantage of one of our many Virtual Visit opportunities. Schedule a visit today! 348 College Avenue, Elizabethtown PA, 17022",
+    "metadata": {
+        "links": [
+            {
+                "start": 209,
+                "end": 231,
+                "url": "https://www.etown.edu/admissions/visit/index.aspx"
+            }
+        ]
+    }
+}
+{
+    "prompt": "What is the Raffensberger Alumni House", 
+    "completion": "The Jay's Inn at the Raffensberger Alumni House is a quaint, newly renovated lodging space located on the edge of Elizabethown College's beautiful 204-acre campus. 
+    The Inn offers three bedrooms for overnight stays as well as a kitchen, conference room, and outdoor patio space for booking your events. 
+    Complete with large windows, modern furniture, fixtures and appliances, and cozy furniture, the Inn is a comfortable space for meeting, relaxing, or for guests looking to spend a night."
+}
+{
+    "prompt": "What is the Kershaw Occupational therapy house", 
+    "completion": "The Kershaw OT House has been called “The Spot” by students and faculty and is primarily used by graduate students in the OT program, as well as the fieldwork coordinator. 
+    Inside, there are work spaces for students, as well as various TVs, whiteboards and couches. The house allows graduate students to discuss and collaborate on their research projects and presentations."
+}
+//res halls
+{
+    "prompt": "What are the residence halls like", 
+    "completion": "The majority of our resident students at Elizabethtown College live in one of our six traditional residence halls (Schlosser, Founders, Ober, Myer, Brinser, and Royer) or in one of our two Independent Living Units (Hackman apartments and Schrieber Quads), on campus. Our residential facilities are inclusive to all genders.
+    Residence Halls include: Standard twin bed that can be adjusted for height and typically have 33” of clearance underneath when raised to the highest, Desks: surface usually 48” x 24”, Desk chair, Dresser (Dresser drawer: 24” wide x 21” deep or; 22” wide x 20” deep and height varies), Wardrobe or closet (Closets are 46-58” wide with one shelf), Windows range from 73” x6 5”h to 82” x 64”h and come with either vinyl blinds or a rolling blind (most rooms have a rolling blind).
+    Apartments/Quads in addition to the standard residence hall furniture include: Living room couch/loveseat and/or chair, Dining table with 4 chairs"
+}
+{
+    "prompt": "What are the Schreiber Quads", 
+    "completion": "The Quads opened in 1992 as senior housing and is named in honor of V. Lester Schreiber (1939), who served as a member and later chairman of the board of trustees. 
+    The Schreiber Quadrangle is one of our ILUs (Independent Living Units) and houses about 128 junior and senior students. 
+    Known as the Quads, it is divided into five separate complexes of townhouses. 
+    Each townhouse includes bedroom furniture, furnished living and dining rooms, a kitchen, and a bathroom. 
+    The townhouses are designed in a U-shape with a large courtyard and commons building where laundry facilities and a central lounge are located. 
+    Several charcoal grills and picnic tables are located in the courtyard."
+}
+{
+    "prompt": "What are the Hackman Apartments", 
+    "completion": "The Hackman Apartments opened in 2000 and is named in honor of Vera R. Hackman (1925). 
+    Vera R. Hackman served as a professor at the College from 1944 to 1973 and dean of women from 1944 to 1968.
+    The Vera Hackman Apartments is one of our ILUs (Independent Living Units) and houses about 180 junior and senior students. 
+    Known as Hackman North and South, the complex is divided into two separate buildings. 
+    Each three-story structure, has 23 four-person apartments that include bedroom furniture, furnished living and dining rooms, a kitchen, and a bathroom. 
+    Each complex has a communal laundry facility located on the first floor. 
+    There is a picnic space outside of Hackman with community charcoal grills and picnic tables."
+}
+{
+    "prompt": "What is Founders Hall", 
+    "completion": "Founders opened in 1971 and the towers were named for the four founders: Samuel H. Hertzler, George Ness Falkenstein, Isacc Newton Harvey Beahm, and Jesse C. Ziegler. 
+    Founders began as a residence hall for coeducational learning communities.
+    Founders is home to about 326 students in a setting of all double rooms. 
+    The building houses students from all cohorts. 
+    Founders is comprised of four towers (A, B, C, and D) with B and C towers connected by the main lounge. 
+    The towers are square shaped with student rooms located in the corners. 
+    All floors are co-ed. 
+    Each corner has a bathroom and most floors have small study lounges. 
+    Each tower has its own laundry facility. 
+    Founders is home to the Stonewall, Wellness, Business Block and Partners in Engineering (PiE) learning communities."
+}
+{
+    "prompt": "What is Brinser Hall", 
+    "completion": "Brinser opened in 1965 as a men's dormitory and named in honor of David E. Brinser (1924) & Sadie M. Brinser.
+    Brinser is home to about 109 students in a setting of suites, triples, singles, and doubles. 
+    The building houses students from all cohorts. 
+    Brinser is a co-ed building, with men and women on separate floors. 
+    Most rooms in the building have a unique “L” shape. 
+    The building features a lounge on the first floor, as well as a kitchen and laundry facilities. 
+    The building is located next to the BSC (Baugher Student Center)"
+}
+{
+    "prompt": "What is Ober Hall", 
+    "completion": "Ober opened in 1960 as a men's dormitory and named in honor of President Henry K. Ober.
+    Ober is home to about 260 students in a setting of 4 triples, 122 double rooms, and 4 singles. 
+    Ober is shaped like a “v”, dividing the floors into wings. 
+    While the building is co-ed, men and women are separated on the floors and wings. 
+    The building houses students from all cohorts. 
+    The building features a lounge on the second floor, a kitchen on the first floor, and laundry facilities in the basement.  
+    The building is located near High Library and the BSC (Baugher Student Center)."
+}
+{
+    "prompt": "What is Myer Hall", 
+    "completion": "Myer was opened as a women's residence hall in 1957 and named in honor of Elizabeth Myer. 
+    Elizabeth Myer was one of the original faculty members on campus and the first female professor.
+    Myer is a co-ed residence hall that houses about 130 students. 
+    Myer has 5 triples, 4 singles, and 65 doubles. 
+    Myer's restrooms were renovated and updated to individual bathroom units (sink, toilet, and shower) on the second and third floors in 2017.  
+    The building features a lounge on each floor, a kitchen on the first floor, a kitchenette on the second floor, and laundry in the basement. 
+    Myer is part of the Dell community."
+}
+{
+    "prompt": "What is Royer Hall", 
+    "completion": "Royer open in 1962 and is named in honor of B. Mary Royer (1921).
+    Royer is home to about 130 students in a setting of 1 triple, 4 singles, and 64 doubles. 
+    The building houses students from all cohorts. 
+    The building is co-ed, with men and women housed on different ends of the hallways. 
+    Each floor has two community bathrooms. 
+    The building features a lounge on the first floor and laundry facilities in the basement. 
+    Royer is part of the Dell community.
+    Royer underwent renovations during the summer of 2023."
+}
+{
+    "prompt": "What is Schlosser Hall", 
+    "completion": "Schlosser opened in 1965 as a women's residence hall and is named in honor of Ralph W. Schlosser (1907) who began as an English professor at the college and later became President of the college.
+    Schlosser is home to about 210 students in a setting of triples, singles, and doubles. 
+    The building houses students from all cohorts. 
+    Schlosser is divided in two wings, East and West. 
+    The building is co-ed, with men and women housed on different ends of the hallways and Schlosser does have one floor's wing that is only women. 
+    Each floor's wing has two bathrooms. 
+    The building features a lounge on the first floor, as well as kitchen and laundry facilities. 
+    Schlosser is home to the Honors and Momentum learning communities."
+}
+{
+    "prompt": "What is a Student Directed Learning Community", 
+    "completion": "Student Directed Learning Communities (SDLC) exist to develop engaged student leaders who are committed to a life of creating positive change through community, education, and service.
+    Students in the SDLC 2.0 Program live in college-owned houses around the perimeter of the campus.
+    Students engage with program participants, faculty and staff members, and community service partners that foster their academic, personal, and professional growth in preparation for lifelong purposeful life work."
+}
+{
+    "prompt": "What is an SDLC", 
+    "completion": "Student Directed Learning Communities exist to develop engaged student leaders who are committed to a life of creating positive change through community, education, and service.
+    Students in the SDLC 2.0 Program live in college-owned houses around the perimeter of the campus.
+    Students engage with program participants, faculty and staff members, and community service partners that foster their academic, personal, and professional growth in preparation for lifelong purposeful life work."
+}
+{
+    "prompt": "What is the Office of Residence life", 
+    "completion": "The building houses offices for the director and staff of residence life."
+}
+{
+    "prompt": "What is the green powered solar cabin", 
+    "completion": "The 200 square foot, standalone green-powered Solar Cabin serves as both a student study cabin and as a platform to test and demonstrate alternative energy storage systems.
+    The cabin has twelve solar panels (eight Sunpower  SPR-215 and four BP SX-120 modules) mounted on the roof with a rated peak power totaling 2200 Watts."
+}
+//academic buildings
+{
+    "prompt": "What is the Masters Center", 
+    "completion": "The Masters Center for Science, Mathematics and Engineering, which prominently features its namesake's impressive collection in the lobby: The Masters Mineral Gallery. 
+    The Center also houses classrooms, labs and offices associated with these academic departments: Biology, Chemistry and Biochemistry, Computer Science, Mathematical Sciences, Occupational Therapy, Physics and Engineering, Psychology"
+}
+{
+    "prompt": "What is Esbenshade hall", 
+    "completion": "Part of the Masters Center for Science, Mathematics and Engineering, Esbenshade Hall is home to the following departments: Computer Science, Mathematical Sciences, Occupational Therapy, Physics and Engineering, Psychology"
+}
+{
+    "prompt": "What is Lyet wing", 
+    "completion": "Part of the Masters Center for Science, Mathematics and Engineering, the Lyet Wing houses the Department of Biology."
+}
+{
+    "prompt": "What is Musser hall", 
+    "completion": "Musser Hall, a wing of the Masters Center for Science, Mathematics and Engineering, is home to the Department of Chemistry and Biochemistry."
+}
+{
+    "prompt": "How do I differ between Musser/Lyet/Esbenshade", 
+    "completion": "Musser, Lyet, and Esbenshade are all part of the Masters Center. 
+    Esbenshade is on the far right side of the masters center when walking in the front doors.
+    Lyet is located in the front left portion of the masters center.
+    Musser is located in the back left portion of the masters center directly behind Lyet"
+}
+{
+    "prompt": "What is the Hoover Center", 
+    "completion": "The Hoover Center is home to one of the College's largest academic departments, as well as two of its Centers: The Department of Business, The S. Dale High Center for Family Business, The Edward R. Murphy Center for Continuing Education and Distance Learning"
+}
+{
+    "prompt": "What is Nicarry Hall", 
+    "completion": "Nicarry Hall houses a number of academic departments, centers and offices: Anthropology and Sociology, Center for Community and Civic Engagement, Center for Global Understanding and Peacemaking, Education, ITS, Political Science, Social Work, Study Abroad Office"
+}
+{
+    "prompt": "What is the Wenger Center", 
+    "completion": "Wenger is home to the offices for many of the College's academic programs: English, Modern Languages, History, Religious Studies, Philosophy"
+}
+{
+    "prompt": "What is the Steinman center", 
+    "completion": "The Steinman Center, unmistakable with its tall white columns, houses several academic departments and media facilties including: Communications, Fine Arts Division, FAPA, ECTV-40, WWEC-FM, Brinser Lecture Room"
+}
+{
+    "prompt": "What is the Zug hall", 
+    "completion": "Zug Memorial Hall is a multipurpose facility that houses academic departments, practice areas, a gallery and administrative offices including: Fine and Performing Arts (FAPA), Music Division, FAPA, Business Office, Financial Aid, Purchasing/Campus Services, Registration and Records, Hess Gallery"
+}
+{
+    "prompt": "What is the High Library", 
+    "completion": "The High Library boasts a circulation of more than 250,000 books and periodicals. 
+    This research facility features computers, classrooms and lots of nooks and crannies for studying."
+}
+//Field/point of interest info
+
+{
+    "prompt": "What is Wolf field", 
+    "completion": "Wolf Field, made of Softsport™ Turf, is home to Elizabethtown College's Lacrosse and Field Hockey teams. 
+    Located near the Thompson Gymnasium, this is an ideal location for sports camps and other recreational activities. 
+    Lighting is available and can be turned on for night events."
+}
+{
+    "prompt": "What is Herr Field", 
+    "completion": "Since 1970, Ira R. Herr Field has been a fixture on the Elizabethtown College campus. 
+    The field is home to the men's and women's soccer teams.
+    The Stadium sports a plush natural grass surface. 
+    The complex in which the field sits also features spacious bleacher seating, electronic scoreboard, lights, and a concessions stand.
+    The field holds the name of the late Ira R. Herr, who touched virtually every part of Elizabethtown College's athletics program during a long and storied tenure at the institution. 
+    Herr was the school's entire coaching staff from 1928-50 and served as Director of Athletics from 1930 until his retirement in 1961."
+}
+{
+    "prompt": "what is Ira. R Herr Soccer Stadium", 
+    "completion": "Since 1970, Ira R. Herr Field has been a fixture on the Elizabethtown College campus. 
+    The field is home to the men's and women's soccer teams.
+    The Stadium sports a plush natural grass surface. 
+    The complex in which the field sits also features spacious bleacher seating, electronic scoreboard, lights, and a concessions stand.
+    The field holds the name of the late Ira R. Herr, who touched virtually every part of Elizabethtown College's athletics program during a long and storied tenure at the institution. 
+    Herr was the school's entire coaching staff from 1928-50 and served as Director of Athletics from 1930 until his retirement in 1961."
+}
+{
+    "prompt": "What is Kevin Scott Boyd baseball stadium", 
+    "completion": "Kevin Scott Boyd Stadium, located near Hackman apartments, is home to Elizabethtown's Division III baseball team. 
+    Completed in 2004, it features a state-of-the-art scoring system and a well cared for playing field. 
+    Boyd Stadium is only available for the use of official baseball teams and tournaments."
+}
+{
+    "prompt": "what is the softball field", 
+    "completion": "The Nest, located behind The Bowers Center, is home to Elizabethtown's Division III softball team. 
+    It features a state-of-the-art scoring system, press box, bleacher seating and a well cared for playing field."
+}
+{
+    "prompt": "what is the Nest", 
+    "completion": "The Nest, located behind The Bowers Center, is home to Elizabethtown's Division III softball team. 
+    It features a state-of-the-art scoring system, press box, bleacher seating and a well cared for playing field."
+}
+{
+    "prompt": "what is the track", 
+    "completion": "The Track is located behind the Leffler Chapel and plays host to Elizabethtown College's Track and Field team. 
+    Featuring a Mondo track surface (2015), the eight-lane, 400-meter track also features a long jump, triple jump, pole vault, high jump, javelin, shotput, and other throwing areas. "
+}
+{
+    "prompt": "what is Brinser field", 
+    "completion": "Brinser Field is a large grassy field located next to Wolf Field and the Brossman Commons. 
+    Capable of being converted into an athletics field, Brinser Field is ideal for a number of outdoor activities due to its central location near the Commons, Brinser and Founders residence halls and Thompson Gym."
+}
+{
+    "prompt": "What is the disk golf course", 
+    "completion": "Elizabethtown College boasts a 9-hole disc golf course, free and open to the community, students and staff. 
+    The course plays through the fields and wooded landscape on the southern side of campus. 
+    Tee #1 is clearly marked between Founders Residence Hall and the Alumni Tennis Courts. 
+    Follow the signage and route until completion."
+}
+{
+    "prompt": "What are the Alumni tennis courts", 
+    "completion": "Elizabethtown College's six full-sized tennis courts are regualrly open to the public, but can be reserved for your event."
+}
+{
+    "prompt": "What is the open air think space", 
+    "completion": "The Open Air Thinkspace is an outdoor seating environment used for conversation, collaboration, and academic use when weather is permitting."
+}
+{
+    "prompt": "What is the academic quad", 
+    "completion": "The Academic Quad is an outdoor seating environment, surrounded by the academic buildings, used for conversation, collaboration, and academic use when weather is permitting."
+}
+{
+    "prompt": "What is the president's peace garden", 
+    "completion": "The President's Peace Garden includes an outdoor seating area, and the Peace Pole. 
+    Founded by the Church of the Brethren in 1899, Elizabethtown College is imbued with the spirit of peacemaking. 
+    The Garden is a gift from the classes of 2009 and 2012."
+}
+{
+    "prompt": "What is the Dell", 
+    "completion": "The Dell is a grassy lawn, accommodating up to 2,000 guests for large outdoor events such as Convocation, Commencement, or special ceremonies. 
+    The Dell boasts large shade trees and is a common place of relaxation and recreational activities."
+}
+{
+    "prompt": "Gardens and greenhouses?", 
+    "completion": "An on-campus garden, complete with honeybee hives which provide honey and also pollenate the garden, is cultivated by our Dining Services staff. 
+    The fruits and vegetables grown in the plots and greennouses are incorporated into the Jay's Nest and Marketplace menus. 
+    Excess fresh produce is sold to the campus community."
+}
+{
+    "prompt": "What is the wildlife meadow", 
+    "completion": "The seven acre wildlife meadow includes native grasses, trees, and shrubs. 
+    The peaceful sanctuary is home to deer, turtles, turkey and birds and provides an outdoor classroom for our campus community."
+}
+{
+    "prompt": "What is the solar array field", 
+    "completion": "The solar array spans 10 acres of the College's property and produces 3,567,000 kWh of energy annually, which accounts for over 20% of E-town's yearly electric consumption. 
+    The power produced in this array facilitates a six million pound reduction of CO2  each year."
+}
+{
+    "prompt": "What is the outdoor basketball court", 
+    "completion": "Located behind the Bowers center, there exists a half court for street basketball."
+}
+{
+    "prompt": "What is the outdoor gaga pit", 
+    "completion": "There is an outdoor gaga pit behind bowers."
+}
+{
+    "prompt": "outdoor beach volleyball", 
+    "completion": "Behind the Bowers center there is an outdoor beach volley ball court. "
+}
+{
+    "prompt": "Outdoor bocce ball", 
+    "completion": "an outdoor sand strip for bocce ball"
+}
+{
+    "prompt": "What is the Alumni pool", 
+    "completion": "Home to Elizabethtown College men's and women's swimming, as well as recreational swimming at the College."
+}
+{
+    "prompt": "What is Lake Placida", 
+    "completion": "Lake Placida has been a College icon for decades. 
+    In 2012, Etown worked closely with the Pennsylvania Department of Environmental Protection and the Pennsylvania Fish Commission during the complete dam renovation project. 
+    The lake is stocked with native fish including bluegills, channel catfish, largemouth bass, minnows and crayfish."
+}
+
+//rooms of interest info
+
+{
+    "prompt": "what is the susquehanna room", 
+    "completion": "Located in Myer Hall, the Susquehanna Room seats 200 people and is used for a variety of campus events and gatherings."
+}
+{
+    "prompt": "what is the honors lounge", 
+    "completion": "The Elizabethtown College Honors Program offers a distinct and challenging four-year course of study for academically qualified students that encourages scholarship and sustained academic activity at its highest level."
+}
+{
+    "prompt": "What is the masters mineral gallery", 
+    "completion": "The collection consists of specimens from around the world, from quarries in Pennsylvania to the Andamooka Ranges of South Australia.
+    The Gallery is open to the public from 8:30 a.m. to 5 p.m. weekdays. 
+    The Gallery is in the lobby of the Masters Center for Science, Mathematics and Engineering."
+}
+{
+    "prompt": "What is Gibble auditorium", 
+    "completion": "Gibble Auditorium located in Esbenshade Hall is an ideal venue for larger conferences, film showings, or speakers. 
+    Graduated seating and a surround sound audio system make presentations enjoyable by all in attendance. 
+    The front stage is equipped with a smart podium with computer access, audio and visual hookups, and projection capabilities."
+}
+{
+    "prompt": "what is the relaxation room", 
+    "completion": "The Relaxation Room is a space to de-stress and unwind. 
+    It has comfortable chairs and de-stress activities, as well as an Sleep Pod that can be reserved for 20 minutes at a time for a quick, rejuvenating power nap!"
+}
+{
+    "prompt": "What is the demonstration kitchen", 
+    "completion": "The demonstration kitchen is located on the first floor of The Bowers Center for Sports, Fitness & Well-Being. 
+    The kitchen is utilized to develop cooking skills, discuss nutrition and engage the campus community in the many aspects of food and wellness. 
+    The demonstration kitchen has scheduled programming and is also available for on-campus courses, clubs and/or organizations through a reservation system."
+}
+{
+    "prompt": "What is the Jay lounge", 
+    "completion": "Jay Lounge - study space and event venue on the lower level of the BSC."
+}
+{
+    "prompt": "What is the college store", 
+    "completion": "The College Store provides essential educational resources to help our students succeed in the classroom. 
+    Offerings include academic items such as new and used textbooks, study guides, access codes, dictionaries, art supplies and graphing calculators.
+    You'll also find a great selection of brand name E-Town apparel and accessories for students, family members and alumni."
+}
+{
+    "prompt": "what is the KAV", 
+    "completion": "From bands to comedians and from dances to banquets, the KAV bustles with Office of Student Activities events during the academic year. 
+    Other College events, such as banquets, meetings and expos, are held in the KAV as well."
+}
+{
+    "prompt": "what is the Koons activity venue", 
+    "completion": "From bands to comedians and from dances to banquets, the KAV bustles with Office of Student Activities events during the academic year. 
+    Other College events, such as banquets, meetings and expos, are held in the KAV as well."
+}
+//dining areas
+{
+    "prompt": "What is the marketplace", 
+    "completion": "Located on the second floor of the Baugher Student Center, the Marketplace is the primary residential dining location on campus. 
+    The Marketplace is an “All-You-Care-To-Eat” facility. 
+    During the academic year, continuous dining is served 7 am - 7 pm every day. 
+    Hours vary during breaks. 
+    The Marketplace also hosts a number of theme dinners throughout the year including the all campus picnic in September, the annual Thanksgiving Dinner, and more!"
+}
+{
+    "prompt": "What is the dining hall", 
+    "completion": "Located on the second floor of the Baugher Student Center, the Marketplace is the primary residential dining location on campus. 
+    The Marketplace is an “All-You-Care-To-Eat” facility. 
+    During the academic year, continuous dining is served 7 am - 7:30 pm every week day and 7 am - 7 pm on weekends. 
+    Hours vary during breaks. 
+    The Marketplace also hosts a number of theme dinners throughout the year including the all campus picnic in September, the annual Thanksgiving Dinner, and more!"
+}
+{
+    "prompt": "What is the Jay's Nest", 
+    "completion": "Visit the Jay's Nest for 'goodies to go' on your way to class or to hang out with friends for a casual lunch or a late night snack. 
+    Located on the first floor of the Baugher Student Center, you'll find made-to-order deli sandwiches, hand-rolled sushi made fresh daily, pizza by the slice, and a large and tasty grill menu. 
+    Don't miss our daily lunch specials, Monday through Friday from 10:30 am - 1:30 pm.
+    Also available, a large selection of convenience items, bottled beverages, and bulk candies, soft pretzels and nachos to go. 
+    Don't miss the daily lunch special, the pizza flavor of the week - and why not try the famous 'Egg Jay' or Turkey Pretzel Melt!"
+}
+{
+    "prompt": "What is the Blue Bean", 
+    "completion": "Enjoy a variety of gourmet coffees, teas, ice cream treats, delicious pure fruit smoothies, and an assortment of baked treats, featuring the famous Elizabethtown College carrot cake!"
+}
+{
+    "prompt": "What is the Fresh Nest", 
+    "completion": "The Fresh Nest is located on the first level of the Bowers Center and offers the E-town community with healthy food options from meal replacement smoothies to pre/post workout smoothies and featured sandwiches and salads of the day!"
+}
+{
+    "prompt": "What is the Jay Truck", 
+    "completion": "Hungry for a late night snack on the weekends? Visit the Jay Truck and pick up a 'Phat Jay'!"
+}
+
+//Building hours
+
+{
+    "prompt": "What are the hours of the marketplace", 
+    "completion": "During the semester the Marketplace hours are as follows: Monday-Thursday 7am - 3pm and 4pm - 7:30pm. Friday-Sunday 7am - 3pm and 4pm - 7pm"
+}
+{
+    "prompt": "what are the hours of the dining hall", 
+    "completion": "During the semester the Marketplace hours are as follows: Monday-Thursday 7am - 3pm and 4pm - 7:30pm. Friday-Sunday 7am - 3pm and 4pm - 7pm"
+}
+{
+    "prompt": "What are the hours of the Jay's Nest", 
+    "completion": "During the semester the Jay's Nest is open everyday from 7am - 12am"
+}
+{
+    "prompt": "what are the hours of the Fresh Nest", 
+    "completion": "During the semester the Fresh Nest is open Monday-Friday from 3pm - 8pm"
+}
+{
+    "prompt": "What are the hours of the Blue Bean", 
+    "completion": "During the semester the Blue Bean Cafe is open from 7:30am - 10pm Monday - Thursday, 7:30am - 3pm Friday, and 12am - 7pm Sunday "
+}
+{
+    "prompt": "What are the hours of the Jay Truck", 
+    "completion": "During the semester the Jay Truck is open Friday and Saturday nights from 10pm - 2 am"
+}
+{
+    "prompt": "What are the hours of all academic buildings", 
+    "completion": "Under normal operational hours, all academic buildings are open to the public from 7:45am - 11pm"
+}
+{
+    "prompt": "What are the hours of the Masters Center", 
+    "completion": "The Masters Center is open to the public from 7:45am - 11pm"
+}
+{
+    "prompt": "What are the hours of Esbenshade", 
+    "completion": "Esbenshade Hall is open to the public from 7:45am - 11pm"
+}
+{
+    "prompt": "What are the hours of Lyet", 
+    "completion": "Lyet wing is open to the public from 7:45am - 11pm"
+}
+{
+    "prompt": "What are the hours of Musser", 
+    "completion": "Musser Hall is open to the public from 7:45am - 11pm"
+}
+{
+    "prompt": "What are the hours of Hoover", 
+    "completion": "The Hoover Center is open to the public from 7:45am - 11pm"
+}
+{
+    "prompt": "What are the hours of Nicarry", 
+    "completion": "Nicarry Hall is open to the public from 7:45am - 11pm"
+}
+{
+    "prompt": "what are the hours of Zug", 
+    "completion": "Zug Hall is open to the public from 7:45am - 11pm"
+}
+{
+    "prompt": "What are the hours of the High Library", 
+    "completion": "The High Library is open from 7:45am - 1am"
+}
+{
+    "prompt": "What are the hours of Wenger", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "What are the hours of the Bowers Center", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "What are the hours of the pool", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "What are the hours of Human Resources", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "What are the Office of Residence Life hours", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "What are the hours of the admissions office", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "What are the hours of Alpha Hall", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "What are the dean's hours", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "What are the hours of registration and records", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "What are the hours of the financial aid office", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "What are the hours of ITS", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "What are the hours of the Business Office", 
+    "completion": "Monday - Friday 8am - 4:30"
+}
+
+
+
+//google forms questions
+{
+    "prompt": "What to people like most about Etown", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "overview of etown", 
+    "completion": "Elizabethtown College is a private four-year college located in central Pennsylvania. 
+    Etown combines the most sought-after professional programs, guaranteed high-impact experiences like research, internships, and cross-cultural study, with a 120+ year tradition of learning to think critically, analyze deeply, and communicate effectively. 
+    Etown offers an essential education that makes 98% of our graduates agree they have what it takes to be successful.
+    At Etown, we place a great emphasis on creating a culturally vibrant campus community where every student can achieve a sense of belonging. 
+    We welcome students from all over the globe to join our campus made up of advocates, changemakers, communicators, and case organizers the world needs more of.
+    No other college will engage you in finding and pursuing your life's calling, your life's work, and your most fulfilling future like we do."
+}
+{
+    "prompt": "summary of etown", 
+    "completion": "Elizabethtown College is a private four-year college located in central Pennsylvania. 
+    Etown combines the most sought-after professional programs, guaranteed high-impact experiences like research, internships, and cross-cultural study, with a 120+ year tradition of learning to think critically, analyze deeply, and communicate effectively. 
+    Etown offers an essential education that makes 98% of our graduates agree they have what it takes to be successful.
+    At Etown, we place a great emphasis on creating a culturally vibrant campus community where every student can achieve a sense of belonging. 
+    We welcome students from all over the globe to join our campus made up of advocates, changemakers, communicators, and case organizers the world needs more of.
+    No other college will engage you in finding and pursuing your life's calling, your life's work, and your most fulfilling future like we do."
+}
+{
+    "prompt": "About Etown", 
+    "completion": "Elizabethtown College combines the most sought-after professional programs, guaranteed high-impact experiences like research, internships, and cross-cultural study, with a 123+ year tradition of learning to think critically, analyze deeply, and communicate effectively. 
+    Etown offers an essential education that makes 98% of our graduates agree they have what it takes to be successful.
+    Our mission is to Educate for Service and we believe that learning is most noble when used to benefit others, regardless of chosen career path. 
+    We prepare our students to lead rich lives of purpose and meaning while advancing independent thought, personal integrity, and social responsibility. 
+    These are the foundations for a life of learning. We foster the values of peace, non-violence, human dignity, and social justice."
+}
+{
+    "prompt": "summary of Elizabethtown", 
+    "completion": "Elizabethtown College combines the most sought-after professional programs, guaranteed high-impact experiences like research, internships, and cross-cultural study, with a 123+ year tradition of learning to think critically, analyze deeply, and communicate effectively. 
+    Etown offers an essential education that makes 98% of our graduates agree they have what it takes to be successful.
+    Our mission is to Educate for Service and we believe that learning is most noble when used to benefit others, regardless of chosen career path. 
+    We prepare our students to lead rich lives of purpose and meaning while advancing independent thought, personal integrity, and social responsibility. 
+    These are the foundations for a life of learning. We foster the values of peace, non-violence, human dignity, and social justice."
+}
+{
+    "prompt": "What is Etown's motto", 
+    "completion": "Educate for service"
+}
+{
+    "prompt": "Etowns Alma Matter", 
+    "completion": "We hail thee Alma Mater dear,
+    As now we sing thy praise;
+    O let thy walls and storied halls
+    Resound with endless lays.
+    The strong and fair alike do share
+    The labour of thy hand;
+    Together they proclaim always
+    Thy glory through the land.
+    As long as breezes 'round thee blow,
+    And countless ages roll,
+    May Heaven's blessings on thee rest,
+    While we thy name extol.
+    CHORUS:
+    We love thy sons so noble,
+    Thy daughters fair and true;
+    We love thee ever, oh E.C.
+    And thy colors Gray and Blue."
+}
+{
+    "prompt": "Is Etown a Christian College", 
+    "completion": "Elizabethtown was founded by members of the Church of the Brethren but is not a christian school"
+}
+{
+    "prompt": "What do people like most about Etown", 
+    "completion": "Students at Etown enjoy the community"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}
+{
+    "prompt": "<prompt text>", 
+    "completion": "<ideal generated text>"
+}

@@ -41,6 +41,7 @@ export default async function handler(
 
     //create chain
     const chain = makeChain(vectorStore);
+    console.log(chain);
     //Ask a question using chat history
     const response = await chain.call({
       question: sanitizedQuestion,
