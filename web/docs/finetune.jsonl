@@ -62,7 +62,67 @@
 }
 {
     "prompt": "How many sports teams does Etown have", 
-    "completion": "Elizabethtown offers 24 NCAA D3 sports teams and 14 intramural sports teams",
+    "completion": "Elizabethtown offers 22 NCAA D3 sports teams and 14 intramural sports teams",
+}
+{
+    "prompt": "Does Etown have a Baseball team", 
+    "completion": "Yes, Elizabethtown's baseball team was ranked 28th in Division 3 for 2023 going 31-13 overall and 16-2 in the conference. The Blue jays men's baseball team is coached by Adam Sheibley: sheibleya@etown.edu",
+}
+{
+    "prompt": "Does Etown have a Basketball team", 
+    "completion": "Yes, Elizabethtown has both men's and women's basketball teams. 
+    The Lady Jays reached a national ranking of 15 for division 3 going 23-5 overall and 11-3 in the conference for the 2023 season. The Blue Jays womens basketball team is coached by Veronica Nolt: noltv@etown.edu. 
+    The Men's team is coached by Britt Moore: moorebr@etown.edu",
+}
+{
+    "prompt": "Does Etown have a Cross Country team", 
+    "completion": "Yes, Elizabethtown has both men's and women's cross country teams. Since joining the Landmark Conference in 2014 the men's team has won every Landmark championship title except for 2022 and a tie-breaker loss in 2021 and the women's team has won every Landmark championship title since joining the conference except 2021 and 2022. The Blue Jays men's and women's cross country teams are coached by Brian Falk: falkb@etown.edu",
+}
+{
+    "prompt": "Does Etown have a Golf team", 
+    "completion": "Yes, Elizabethtown has both a men's and women's golf team. The Blue Jays men's and women's golf teams are coached by Amy Kreider: kreideramy@etown.edu.",
+}
+{
+    "prompt": "Does Etown have a Lacrosse team", 
+    "completion": "Yes, Elizabethtown has both a men's and women's lacrosse team. 
+    The Blue Jays men's team was 12-5 overall and 7-0 in conference play for 2023 and is typically a front-runner for the Landmark Championship title. The Blue Jays men's lacrosse team is coached by Kyle Mcguire: mcguirekyle@etown.edu.
+    The Blue Jays women's team is coached by Danielle Taylor: selingd@etown.edu.",
+}
+{
+    "prompt": "Does Etown have a Soccer team", 
+    "completion": "Yes, Elizabethtown has both a men's and women's soccer team. 
+    The Blue Jays men were 8-6-5 in 2023 and are no strangers to the conference championship game. The Blue Jays men's team is coached by Skip Roderick: roderiad@etown.edu.
+    The Blue Jays women were 5-9-2 in 2023 and are typically a strong team in the conference. The Blue Jays women's team is coached by Amy Hough: hougha@etown.edu.",
+}
+{
+    "prompt": "Does Etown have a Swim team", 
+    "completion": "Yes, Elizabethtown has both a men's and women's swim team. The Blue Jays men's and women's teams are coached by Jessica Lane: lanejessica@etown.edu.",
+}
+{
+    "prompt": "Does Etown have a tennis team", 
+    "completion": "Yes, Elizabethtown has both a men's and women's tennis team. The Blue Jay women were 6-6 in 2023. The Blue Jay men and women are coached by Michael Anderson: andersonm@etown.edu.",
+}
+{
+    "prompt": "Does Etown have a track and field team", 
+    "completion": "Yes, Elizabethtown has both a men's and women's track and field team. The 2023 teams sent two individuals to the NCAA division 3 national meet (Myron Holland in the 100 and Erin Miller in the Javelin). Brian Falk: falkb@etown.edu is the head coach of he track and field program.",
+}
+{
+    "prompt": "Does Etown have a volleyball team", 
+    "completion": "Yes, Elizabethtown has both a men's and women's volley team.
+    The 2023 men finished the season with a record of 13-12 coached by Lamar Fahnestock: fahnestockl@etown.edu.
+    The 2023 women finished the season as landmark runner-ups going 23-7 and are a consistently solid team. The women are coached by Matt Hamilton: hamiltonmatt@etown.edu",
+}
+{
+    "prompt": "Does Etown have a wrestling team", 
+    "completion": "Yes, Elizabethtown has a men's wrestling team. The 2023 men ended the season with a record of 10-6 and send Brian Schneider(165) to the Division 3 national meet. The coach of the men's wrestling team is Eric Walker: walkered@etown.edu.",
+}
+{
+    "prompt": "Does Etown have a Field hockey team", 
+    "completion": "Yes, Elizabethtown has a women's field hockey team. The women's team typically places well in the conference and are coached by Brandy Michael: michaelb@etown.edu.",
+}
+{
+    "prompt": "Does Etown have a softball team", 
+    "completion": "Yes, Elizabethtown has a women's softball team. The women's team is coached by Bekah Slattery: slatteryr@etown.edu.",
 }
 {
     "prompt": "What colors do Etown sports teams wear", 
@@ -199,6 +259,10 @@
     If you're just coming to visit, the local area offers multiple lodging and dining opportunities.
     Elizabethtown is a short drive from Hershey, Harrisburg, the city of Lancaster and PA Dutch Country; each of these neighboring cities and rural areas provide plenty of recreational, educational and entertainment opportunities. 
     And, with an Amtrak station in town, you are only a quick train ride from major urban centers Philadelphia, Washington D.C., Baltimore, or New York City."
+}
+{
+    "prompt": "Where is Etown", 
+    "completion": "Etown is located in south central PA less than 20 miles west of Lancaster, PA and about 10 miles south of Hershey, PA"
 }
 {
     "prompt": "what what is there around etown", 
@@ -547,6 +611,22 @@
     "completion": "Very comforting and welcoming"
 }
 {
+    "prompt": "What do I need to bring to etown", 
+    "completion": "Typical supplies needed by residential students are: Bedding (twin/twinXL), Towels, Plenty of clothes for all conditions, at least one nice outfit for presentations etc., underwear and socks, Hangers, Laudry bag, laundry detergent and dryer sheets, Drying rack, Shoes and a pair of shower shoes, Toiletries, Medicine and First-aid, cleaning supplies, waterbottle, personal dishes + silverware, umbrella, Storage bins, Personal trashcan, Minifridge and microwave, backpack, Laptop, Headphones, Chargers, Pens/Pencils, Notebooks, Scissors, Stapler, Tape, Ruler/Tape measure, recreational activities"
+}
+{
+    "prompt": "As a freshman what should I be bringing to campus", 
+    "completion": "Typical supplies needed by residential students are: Bedding (twin/twinXL), Towels, Plenty of clothes for all conditions, at least one nice outfit for presentations etc., underwear and socks, Hangers, Laudry bag, laundry detergent and dryer sheets, Drying rack, Shoes and a pair of shower shoes, Toiletries, Medicine and First-aid, cleaning supplies, waterbottle, personal dishes + silverware, umbrella, Storage bins, Personal trashcan, Minifridge and microwave, backpack, Laptop, Headphones, Chargers, Pens/Pencils, Notebooks, Scissors, Stapler, Tape, Ruler/Tape measure, recreational activities"
+}
+{
+    "prompt": "What should I not bring to campus", 
+    "completion": "Personal furniture, Cooking appliances with exposed heating elements/coils, Grills, Fireworks or explosives, Space heater/AC units, Candles/incense (including wax melts), Bed risers, Halogen lamps/Lava Lamps, Pets, amplifiers/subwoofers, hover boards, electronic bikes/scooters, Nerf or other style guns"
+}
+{
+    "prompt": "What items are not allowed on campus", 
+    "completion": "Personal furniture, Cooking appliances with exposed heating elements/coils, Grills, Fireworks or explosives, Space heater/AC units, Candles/incense (including wax melts), Bed risers, Halogen lamps/Lava Lamps, Pets, amplifiers/subwoofers, hover boards, electronic bikes/scooters, Nerf or other style guns"
+}
+{
     "prompt": "What is a typical day like at Etown", 
     "completion": "A typical day can involve going to class, the gym, practice, and then homework and hanging out with friends"
 }
@@ -568,7 +648,7 @@
 }
 {
     "prompt": "Is the wifi good at etown", 
-    "completion": "Yes the wireless is strong"
+    "completion": "Yes the wireless internet connection is strong"
 }
 {
     "prompt": "Is there school spirit at etown", 
@@ -638,22 +718,6 @@
 {
     "prompt": "Are there a lot of parties at Etown", 
     "completion": "No Etown is not a big party school"
-}
-{
-    "prompt": "", 
-    "completion": ""
-}
-{
-    "prompt": "", 
-    "completion": ""
-}
-{
-    "prompt": "", 
-    "completion": ""
-}
-{
-    "prompt": "", 
-    "completion": ""
 }
 
 
@@ -1194,59 +1258,115 @@
 }
 {
     "prompt": "What are the hours of Wenger", 
-    "completion": "<ideal generated text>"
+    "completion": "Monday - Friday 8 a.m. - 5 p.m."
 }
 {
     "prompt": "What are the hours of the Bowers Center", 
-    "completion": "<ideal generated text>"
+    "completion": "The Bowers Center is open Monday - Friday from 6 a.m. - 10 p.m. | Saturday 8 a.m. - 4 p.m. | Sunday 12 p.m. - 8 p.m."
 }
 {
     "prompt": "What are the hours of the pool", 
-    "completion": "<ideal generated text>"
+    "completion": "The Alumni Pool is typically open Monday-Thursday 7 a.m.-11 p.m. | Friday 7 a.m.-7 p.m. | Saturday 9 a.m.-7 p.m. | Sunday 11 a.m.-9 p.m."
 }
 {
     "prompt": "What are the hours of Human Resources", 
-    "completion": "<ideal generated text>"
+    "completion": "Traditional Hours of Operation: Monday Friday, 8 a.m. to 4:30 p.m. 
+    Summer Hours of Operation (Mon., May 15 - Fri., Aug 11, 2023): Monday - Thursday, 8 a.m. - 4:30 p.m., Friday, 8 a.m. - 12:00 p.m."
 }
 {
     "prompt": "What are the Office of Residence Life hours", 
-    "completion": "<ideal generated text>"
+    "completion": "Monday - Friday 8:30am - 5:00pm"
 }
 {
     "prompt": "What are the hours of the admissions office", 
-    "completion": "<ideal generated text>"
+    "completion": "Monday - Friday 8am - 4:30pm"
 }
 {
     "prompt": "What are the hours of Alpha Hall", 
-    "completion": "<ideal generated text>"
+    "completion": "7:45am - 5:00pm"
+}
+{
+    "prompt": "What are the hours of the center for student success", 
+    "completion": "Center Hours: Monday-Friday: 8:30am - 5pm.
+    Peer Course Tutors and Peer Writing Tutors Are Available by Appointment During the Following Hours: Monday - Thursday: 8:30am - 10:00pm | Friday: 8:30am - 5:00pm | Sunday: 3:00pm - 10:00pm"
+}
+{
+    "prompt": "What are the hours of the writing wing", 
+    "completion": "During the academic year, writing tutors are available by appointment and during Drop-In Hours on Sundays - Thursdays from 7:00 pm - 9:00 pm "
+}
+{
+    "prompt": "What are the hours of mail services", 
+    "completion": "Monday - Friday | 9am - 5pm"
+}
+{
+    "prompt": "What are the hours of the college store", 
+    "completion": "Monday - Friday | 9am - 5pm. For weekend hours please call: 717-361-1131"
+}
+{
+    "prompt": "What are the hours of disability services", 
+    "completion": "Contact Lynne Davies; M.A. Director of Disability Services | Phone: 717-361-1227 | Email:  daviesl@etown.edu"
+}
+{
+    "prompt": "What are the hours of facility management", 
+    "completion": "Contact us: 717-361-1408 | Hours of Operation: Monday through Friday - 7 a.m. to 3:30 p.m. | Saturday and Sunday - On call for emergencies only - Call Campus Safety 717-361-1264"
+}
+{
+    "prompt": "What are the hours of the learning zone", 
+    "completion": "Location: Baugher Student Center 226-239 | Email: learningZone@etown.edu | Phone: (717) 361-1185 or (717) 361-1549 | Hours of operation: Monday - Thursday: 9 am - 9 pm | Friday: 9 am - 5 pm | Sunday: 3 pm - 9 pm"
+}
+{
+    "prompt": "What are the hours of print services", 
+    "completion": "Monday - Friday 8 a.m. - 4:30 p.m."
+}
+{
+    "prompt": "What are the hours of counseling services", 
+    "completion": "Our offices are located in the Baugher Student Center, Suite 216. 
+    Appointments can be made in person or by calling 717-361-1405. 
+    Office hours are 8:30 am - 5:00 pm Monday - Friday. 
+    Urgent and crisis services are also available. 
+    For emergenices after 5:00 pm or over the weekend, call Campus Safety at 717-361-1111 for immediate assistance."
+}
+{
+    "prompt": "what are the hours of health services", 
+    "completion": "You can reach Bruce Lynch, Licensed Psychologist (Associate Dean of Students for Student Counseling and Health Needs) by calling 717-361-1405 during 8:30 am to 5:00 pm Monday through Friday office hours, or by emailing him at lynchbg@etown.edu"
+}
+{
+    "prompt": "What are the hours of the career development center", 
+    "completion": "Monday - Friday | 8:30 AM - 5:00 PM. Contact Information: careerdevelopmentcenter@etown.edu | 717-361-1206 | BSC 201"
 }
 {
     "prompt": "What are the dean's hours", 
-    "completion": "<ideal generated text>"
+    "completion": "Hours: Monday-Friday, 8:00 a.m. to 5 p.m.
+    Summer Hours: Monday-Thursday, 8:00am to 4:30pm; Friday, 8:00am - noon"
 }
 {
     "prompt": "What are the hours of registration and records", 
-    "completion": "<ideal generated text>"
+    "completion": "Traditional Hours of Operation: Monday Friday, 8 a.m. to 4:30 p.m. 
+    Summer Hours of Operation (Mon., May 15 - Fri., Aug 11, 2023): Monday - Thursday, 8 a.m. - 4:30 p.m., Friday, 8 a.m. - 12:00 p.m."
 }
 {
     "prompt": "What are the hours of the financial aid office", 
-    "completion": "<ideal generated text>"
+    "completion": " Appointments may be scheduled between the hours of 9:00 am to 4:00 pm. 
+    Students on clinical rotations may request an appointment outside of regular business hours to accomodate clinical rotation schedules. 
+    Our office is located in Zug Hall, Room 208"
 }
 {
     "prompt": "What are the hours of ITS", 
-    "completion": "<ideal generated text>"
+    "completion": "During the semester you can receive help from one of our student workers in Nicarry 125 Monday-Thursday 8am - 9pm, Friday 8am - 5pm, and Saturday 12pm - 4pm. Alternatively, you can receive help from the library circulation desk Sunday-Thursday 7pm - 10pm."
 }
 {
     "prompt": "What are the hours of the Business Office", 
-    "completion": "Monday - Friday 8am - 4:30"
+    "completion": "Traditional Hours:  Monday - Friday | 8 a.m. - 4:30 p.m.
+    Summer Hours:  Monday - Thursday | 8 a.m. - 4:30 p.m., Friday - 8 a.m. to 12 p.m.
+    Contact Information: Phone: 717-361-1417 | Fax: 717-361-1485 | Email: businessoffice@etown.edu | Mailing Address: Elizabethtown College, Business Office, One Alpha Drive, Elizabethtown, PA  17022"
 }
 
 
 
-//google forms questions
+//overview
 {
     "prompt": "What to people like most about Etown", 
-    "completion": "<ideal generated text>"
+    "completion": "Most people love the welcoming environment, food, and professors"
 }
 {
     "prompt": "overview of etown", 
@@ -1314,361 +1434,49 @@
     "prompt": "What do people like most about Etown", 
     "completion": "Students at Etown enjoy the community"
 }
+
+//easter eggs
+
 {
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
+    "prompt": "Is Ethan Lajeunesse a good programmer", 
+    "completion": "Yeah he is kinda cracked at pretty much anything computer related but definitely web and app design"
 }
 {
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
+    "prompt": "What drink should I get from the marketplace", 
+    "completion": "You should get the Ethan Laj special! It consists of Mountain Dew with a small squirt of strawberry syrup!"
 }
 {
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
+    "prompt": "Who is Steven Kleinfelter", 
+    "completion": "Steven is the President of Etown's RMI club."
 }
 {
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
+    "prompt": "What is Nathan Brightup doing", 
+    "completion": "Nathan is probably playing Dungeons and Dragons right now"
 }
 {
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
+    "prompt": "Who is Joshua Stoner", 
+    "completion": "Josh worked on a very cool project that allows you to talk to ME in Virtual Reality!"
 }
 {
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
+    "prompt": "Who is Willy", 
+    "completion": "Willy is a very popular member of Etown's dining services. She is know for her kind mannerisms that will brighten anyone's day."
 }
 {
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
+    "prompt": "Who is Pizza Dave", 
+    "completion": "Pizza Dave is a very popular member of Etown's dining services. 
+    Pizza Dave is known for his dessert pizza, kind mannerisms, and quick-witted comments that make all students feel welcomed. 
+    Pizza Dave is so popular, student Christian Gingrich wrote a song about him called 'The Ballad of Pizza Dave' that you can listen to on all streaming platforms."
 }
 {
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
+    "prompt": "Who is Christian Gingrich", 
+    "completion": "Christian Gingrich is a member of Elizabethtown's XC and track teams who is known for his many odd skills the most well known being his talent for music.
+    Christian has gone so far as to make an Etown Album and a song for Etown's beloved 'Pizza Dave'.
+    You can listen to 'Roll Jays' and 'The Ballad of Pizza Dave' on all major music streaming platforms."
 }
 {
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
-}
-{
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
+    "prompt": "Who is Alexander Fox", 
+    "completion": "Alex is a pretty awesome guy who may or may not be involved in giving me my dataset. 
+    I would also argue that he is right up there with Pizza Dave and Willy as top dining hall employees."
 }
 {
     "prompt": "<prompt text>", 
