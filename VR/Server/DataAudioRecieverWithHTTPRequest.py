@@ -1,7 +1,6 @@
 import socket
 import speech_recognition as sr
 from gtts import gTTS
-import os
 import numpy as np
 import struct
 import wave
@@ -9,8 +8,7 @@ from pydub import AudioSegment
 from os import path
 import json
 import requests
-import threading
-import sys
+import psutil
 
 sample_rate = 44100
 
@@ -90,9 +88,9 @@ def listen( do_voice_input, use_encoded_responses, audiodata):
 
     return model_response
 # Socket configuration
-HOST = "172.16.80.112"
-PORT = 12345
- 
+HOST = "10.150.0.2"
+PORT = 45250
+PORT2 = 45251
     
 class Chatbot:
     def __init__(self):
@@ -115,13 +113,16 @@ class Chatbot:
         return response_object["text"]
 
 
-timeout_duration = 15  # 15 Seconds
+
 
 # Set up the socket and start listening for audio data
 
 def main():
     while(True):
+        terminate_existing_process(PORT)
+        terminate_existing_process(PORT2)
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+            s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
             s.bind((HOST, PORT))
 
             s.listen(1)
@@ -129,8 +130,7 @@ def main():
 
             client_socket, addr = s.accept()
             print(f"Connection from {addr} established")
-            timer = threading.Timer(timeout_duration, timeout_handler)
-            timer.start()
+
             audio_data = None
             data=None
             audio_data = b""   
@@ -140,22 +140,19 @@ def main():
                     break
                 audio_data += data
             #print(audio_data)
-            timer.cancel()
-            timer = threading.Timer(timeout_duration, timeout_handler)
-            timer.start()
+
             text= listen(True,False,audio_data)
             TexttoSpeech(text)
         #   text = convert_audio_to_text(audio_data)
 
             print(f"Received audio: {text}")
-        client_socket.close()
+            client_socket.close()
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
-            server_socket.bind((HOST, PORT))
+            server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            server_socket.bind((HOST, PORT2))
             server_socket.listen(1)
-            timer.cancel()
-            timer = threading.Timer(timeout_duration, timeout_handler)
-            timer.start()
-            print(f"Listening on {HOST}:{PORT}...")
+
+            print(f"Listening on {HOST}:{PORT2}...")
             file_data = None
             client_socket, addr = server_socket.accept()
             print(f"Connection from {addr} established")
@@ -168,20 +165,18 @@ def main():
             print(str(file_size))    
             # Send the file data to the client
             client_socket.sendall(file_data)
-        client_socket.close()
-        timer.cancel()
+            client_socket.close()
+def terminate_existing_process(port):
+    for process in psutil.process_iter():
+        try:
+            connections = process.connections()
+            for conn in connections:
+                if conn.laddr.port == port:
+                    process.terminate()
+                    print(f"Terminated process with PID: {process.pid}")
+        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+            pass
+        
 
-def timeout_handler():
-    raise TimeoutError("Script timed out")
 
-if True:
-    try:
-            main()
-    except TimeoutError:
-            print("Script timed out. Restarting...")
-            # Restart the script by running the Python interpreter again
-            # Note: Make sure to pass the same arguments as the initial script
-            python = sys.executable
-            sys.stdout.flush()
-            sys.stderr.flush()
-            sys.exit(os.execvp(python, [python] + sys.argv))
+main()
