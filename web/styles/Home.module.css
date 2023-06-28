@@ -164,6 +164,7 @@
 /* so the text does not go under the report button */
 .apimessage .markdownanswer p {
   margin-right: 5.5%;
+  width: 100%;
 }
 
 .markdownanswer {
