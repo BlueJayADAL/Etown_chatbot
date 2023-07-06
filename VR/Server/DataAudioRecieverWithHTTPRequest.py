@@ -12,10 +12,7 @@ import psutil
 
 sample_rate = 44100
 
-#Setup voice engine
 
-
-#Speaks a string of text
 
 def TexttoSpeech(audiofile):
     # The text that you want to convert to audio
@@ -87,11 +84,34 @@ def listen( do_voice_input, use_encoded_responses, audiodata):
     print("Bot: " + model_response + '\n')
 
     return model_response
+
+
+def get_outward_ipv4():
+    try:
+        response = requests.get('https://api.ipify.org')
+        if response.status_code == 200:
+            return response.text
+        else:
+            print(f"Failed to retrieve IP address. Status Code: {response.status_code}")
+    except requests.RequestException as e:
+        print(f"An error occurred while fetching the IP address: {e}")
+
+def get_local_ipv4():
+    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+        try:
+            # Use a public DNS server to establish a connection
+            s.connect(("8.8.8.8", 80))
+            local_ip = s.getsockname()[0]
+        except socket.error:
+            local_ip = "127.0.0.1"  # Default to localhost if connection fails
+    return local_ip
+
 # Socket configuration
-HOST = "10.150.0.2"
+ipv4 = get_outward_ipv4()
+HOST = get_local_ipv4()
 PORT = 45250
 PORT2 = 45251
-    
+
 class Chatbot:
     def __init__(self):
         self.client = requests.Session()
@@ -99,13 +119,13 @@ class Chatbot:
     def get_chatbot_response(self, question):
         request_body = {
             "question": question,
-            "history": []  # include chat history if needed
+            "history": [] 
         }
         json_content = json.dumps(request_body)
         headers = {"Content-Type": "application/json"}
 
         response = self.client.post(
-            #Put the link to the Web hosted server here
+
             "https://error-54odydxkuq-uc.a.run.app/api/chat", data=json_content, headers=headers)
         response_text = response.text
         response_object = json.loads(response_text)
@@ -114,14 +134,13 @@ class Chatbot:
 
 
 
-
-# Set up the socket and start listening for audio data
-
 def main():
+    print(f"Hello! This machine is currently running on IPv4 address {HOST} on ports {PORT} and {PORT2}. If you are trying to configure the VR game, use the panels behind you when you spawn and input those three numbers in the order printed above. Note that this will only work if you are connecting from a headset on the same network. If you are trying to connect over the internet, it will require inputting the outward IP address ({ipv4}) in the VR game, as well as needing the ports as listed above to be forwarded to the local IP address of this machine: {HOST}, for both receiving and sending data.")
     while(True):
         terminate_existing_process(PORT)
         terminate_existing_process(PORT2)
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+
             s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
             s.bind((HOST, PORT))
 
