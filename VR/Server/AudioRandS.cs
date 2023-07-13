@@ -22,7 +22,9 @@ public class AudioRandS : MonoBehaviour
     private AudioClip recordedClip;
     private bool isRecording;
     public AudioPlayerSTT player;
-
+    public GameObject light;
+    public GameObject mic;
+    public AudioSource wait;
 
     private byte[] receivedData = null;
     private byte[] Datamm = null;
@@ -51,19 +53,21 @@ public class AudioRandS : MonoBehaviour
         isRecording = true;
         Debug.Log("Recording started...");
         receivedData = null;
+        mic.SetActive(true);
     }
 
 public async void StopRecording()
 {
     if (!isRecording)
         return;
-
+    mic.SetActive(false);
     Microphone.End(null);
     isRecording = false;
-
+    light.SetActive(true);
     if (recordedClip == null)
         return;
-
+    
+    wait.Play();
     // Convert the audio clip to a float array
     float[] samples = new float[recordedClip.samples];
     recordedClip.GetData(samples, 0);
@@ -93,8 +97,8 @@ public async void StopRecording()
     private async void SendAudioData(byte[] data)
     {
         // Socket configuration
-        string serverAddress = "172.16.80.112";
-        int serverPort = 12345;
+        string serverAddress = "35.245.154.81";
+        int serverPort = 45250;
 
         try
         {
@@ -103,7 +107,7 @@ public async void StopRecording()
 
             // Connect to the server asynchronously
             await client.ConnectAsync(IPAddress.Parse(serverAddress), serverPort);
-
+ 
             // Get a network stream for sending data
             NetworkStream stream = client.GetStream();
 
@@ -124,8 +128,8 @@ public async void StopRecording()
     private async void ReceiveAudioData()
     {
         // Socket configuration
-        string serverAddress = "172.16.80.112";
-        int serverPort = 12345;
+        string serverAddress = "35.245.154.81";
+        int serverPort = 45251;
 
         
         while(receivedData==null){
@@ -251,6 +255,8 @@ public async void StopRecording()
         Debug.Log($"Saved audio data to {fileName} @ {wavFilePath}");
        // Thread.Sleep(5000);
        textField.text = "File Saved!";
+        light.SetActive(false);
+
         player.Play();
            
     }

@@ -1,27 +1,18 @@
 import socket
-from pocketsphinx import LiveSpeech
 import speech_recognition as sr
 from gtts import gTTS
-import DataCleanser as dc
-import openai
-import os
-from dotenv import load_dotenv
-load_dotenv()
-import binascii
 import numpy as np
 import struct
 import wave
-import pyaudio
 from pydub import AudioSegment
 from os import path
 import json
 import requests
+import psutil
+
 sample_rate = 44100
-openai.api_key = os.getenv("OpenAI_API_KEY")
-#Setup voice engine
 
 
-#Speaks a string of text
 
 def TexttoSpeech(audiofile):
     # The text that you want to convert to audio
@@ -50,7 +41,7 @@ def convert_mp3_to_wav(src, dst):
 
 
 
-def listen(model1, do_voice_input, use_encoded_responses, audiodata):
+def listen( do_voice_input, use_encoded_responses, audiodata):
     model_response = None
     
     pcm_samples = np.frombuffer(audiodata, dtype=np.int16)
@@ -74,8 +65,7 @@ def listen(model1, do_voice_input, use_encoded_responses, audiodata):
 
             recognized_text = ''+recognizer.recognize_google(audio12, show_all=False,with_confidence=False)
             print(recognized_text)
-        #first_transcript = recognized_text['alternative'][0]['transcript']
-        #print(first_transcript)
+
     
     except Exception as e:
         return "I'm sorry I had trouble understanding your question could you ask again?"
@@ -84,76 +74,44 @@ def listen(model1, do_voice_input, use_encoded_responses, audiodata):
     except sr.RequestError as e:
         print("Error occurred during speech recognition: {0}".format(e))
     
- #   print(statement)
-    
-   # evaluation = model1.evaluate(recognized_text,recognized_text)
-   # model_response = dc.encode_response(evaluation) if use_encoded_responses else evaluation
+
     chatbot = Chatbot()
     model_response = chatbot.get_chatbot_response(recognized_text)
 
     if model_response==None or model_response=="" or model_response==" ":
         model_response = "I'm sorry I couldn't understand the question"
-    #Print bot response and speak back to user
+
     print("Bot: " + model_response + '\n')
-    # speak(model_response)
+
     return model_response
+
+
+def get_outward_ipv4():
+    try:
+        response = requests.get('https://api.ipify.org')
+        if response.status_code == 200:
+            return response.text
+        else:
+            print(f"Failed to retrieve IP address. Status Code: {response.status_code}")
+    except requests.RequestException as e:
+        print(f"An error occurred while fetching the IP address: {e}")
+
+def get_local_ipv4():
+    with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
+        try:
+            # Use a public DNS server to establish a connection
+            s.connect(("8.8.8.8", 80))
+            local_ip = s.getsockname()[0]
+        except socket.error:
+            local_ip = "127.0.0.1"  # Default to localhost if connection fails
+    return local_ip
+
 # Socket configuration
-HOST = "172.16.80.112"
-PORT = 12345
- 
-# Configure PocketSphinx
-config = {
-    'verbose': False,
-    'audio_device': 'plughw:1,0',  # Replace with your audio device
-    'buffer_size':2048
-}
+ipv4 = get_outward_ipv4()
+HOST = get_local_ipv4()
+PORT = 45250
+PORT2 = 45251
 
-#def convert_audio_to_text(audio_data):
-#    s
-
-# Set up the socket and start listening for audio data
-
-
-class GPT3:
-    doc_data, type = None, None
-
-    def __init__(self, model_type, doc_data):
-        self.type = model_type
-        self.doc_data = doc_data
-
-    def evaluate(self, text):
-        print(text)
-        # Initialize model based on passed parameters
-        if True:
-            response = openai.Completion.create(
-                engine="davinci",
-                prompt='Q: ' + text + "\nA: ",
-                temperature=0.3,
-                max_tokens=100,
-                top_p=1,
-                frequency_penalty=0,
-                presence_penalty=0.3,
-                stop=['\n', '<|endoftext|>']
-            )
-            response = str(response['choices'][0]['text'])
-
-            # Remove question marks at beginning of text response if they exist
-            if response[:2] == '??':
-                response = response[2:]
-            return response
-        elif self.type == 'ETOWN':
-            response = openai.Answer.create(
-                search_model="ada",
-                model='curie',
-                question=text,
-                documents=self.doc_data,
-                examples_context="When was etown founded?",
-                examples=[["Elizabethtown College was founded in 1899.", "Etown was founded in 1899."]],
-                max_tokens=30,
-                stop=['\n', '<|endoftext|>'],
-            )
-            return response['answers'][0]
-        
 class Chatbot:
     def __init__(self):
         self.client = requests.Session()
@@ -161,13 +119,13 @@ class Chatbot:
     def get_chatbot_response(self, question):
         request_body = {
             "question": question,
-            "history": []  # include chat history if needed
+            "history": [] 
         }
         json_content = json.dumps(request_body)
         headers = {"Content-Type": "application/json"}
 
         response = self.client.post(
-            #Put the link to the Web hosted server here
+
             "https://error-54odydxkuq-uc.a.run.app/api/chat", data=json_content, headers=headers)
         response_text = response.text
         response_object = json.loads(response_text)
@@ -176,46 +134,68 @@ class Chatbot:
 
 
 
-# Set up the socket and start listening for audio data
-model=GPT3
-while(True):
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-        s.bind((HOST, PORT))
+def main():
+    print(f"Hello! This machine is currently running on IPv4 address {HOST} on ports {PORT} and {PORT2}. If you are trying to configure the VR game, use the panels behind you when you spawn and input those three numbers in the order printed above. Note that this will only work if you are connecting from a headset on the same network. If you are trying to connect over the internet, it will require inputting the outward IP address ({ipv4}) in the VR game, as well as needing the ports as listed above to be forwarded to the local IP address of this machine: {HOST}, for both receiving and sending data.")
+    while(True):
+        terminate_existing_process(PORT)
+        terminate_existing_process(PORT2)
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
 
-        s.listen(1)
-        print(f"Listening on {HOST}:{PORT}...")
+            s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            s.bind((HOST, PORT))
 
-        client_socket, addr = s.accept()
-        print(f"Connection from {addr} established")
-        audio_data = None
-        data=None
-        audio_data = b""   
-        while True:
-            data = client_socket.recv(1024)
-            if not data:
-                break
-            audio_data += data
-        #print(audio_data)
-        text= listen(model,True,False,audio_data)
-        TexttoSpeech(text)
-    #   text = convert_audio_to_text(audio_data)
+            s.listen(1)
+            print(f"Listening on {HOST}:{PORT}...")
 
-        print(f"Received audio: {text}")
-    client_socket.close()
-    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
-        server_socket.bind((HOST, PORT))
-        server_socket.listen(1)
-        print(f"Listening on {HOST}:{PORT}...")
-        file_data = None
-        client_socket, addr = server_socket.accept()
-        print(f"Connection from {addr} established")
-        with open("sendfile.wav", 'rb') as file:
-        # Read the contents of the file
-            file_data = file.read()
-        file_size = len(file_data)
+            client_socket, addr = s.accept()
+            print(f"Connection from {addr} established")
+
+            audio_data = None
+            data=None
+            audio_data = b""   
+            while True:
+                data = client_socket.recv(1024)
+                if not data:
+                    break
+                audio_data += data
+            #print(audio_data)
+
+            text= listen(True,False,audio_data)
+            TexttoSpeech(text)
+        #   text = convert_audio_to_text(audio_data)
+
+            print(f"Received audio: {text}")
+            client_socket.close()
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server_socket:
+            server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            server_socket.bind((HOST, PORT2))
+            server_socket.listen(1)
+
+            print(f"Listening on {HOST}:{PORT2}...")
+            file_data = None
+            client_socket, addr = server_socket.accept()
+            print(f"Connection from {addr} established")
+            with open("sendfile.wav", 'rb') as file:
+            # Read the contents of the file
+                file_data = file.read()
+            file_size = len(file_data)
+            
+
+            print(str(file_size))    
+            # Send the file data to the client
+            client_socket.sendall(file_data)
+            client_socket.close()
+def terminate_existing_process(port):
+    for process in psutil.process_iter():
+        try:
+            connections = process.connections()
+            for conn in connections:
+                if conn.laddr.port == port:
+                    process.terminate()
+                    print(f"Terminated process with PID: {process.pid}")
+        except (psutil.NoSuchProcess, psutil.AccessDenied, psutil.ZombieProcess):
+            pass
         
 
-        print(str(file_size))    
-        # Send the file data to the client
-        client_socket.sendall(file_data)
-    client_socket.close()
+
+main()
