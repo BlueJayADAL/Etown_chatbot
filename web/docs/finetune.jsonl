@@ -54,7 +54,7 @@
 }
 {
     "prompt": "Who is the president of Etown", 
-    "completion": "Betty Riders",
+    "completion": "Betty Rider",
 }
 {
     "prompt": "How many students participate in sports at Etown.", 
@@ -757,6 +757,10 @@
     The Fresh Nest is located on the first level of the Bowers Center and offers the E-town community with healthy food options from meal replacement smoothies to pre/post workout smoothies and featured sandwiches and salads of the day!"
 }
 {
+    "prompt": "What is the Gym", 
+    "completion": "Etown has two Gyms. The Bowers Fitness Center being the main workout area and Thompson Gym containing the main basketball court and a small weight room"
+}
+{
     "prompt": "What is the Bucher Meetinghouse", 
     "completion": "The Young Center for Anabaptist and Pietist Studies is a premier research center. It is home to the Bucher Bookshop, the Bucher Meetinghouse and the offices of the Center's staff, scholars and visiting fellows."
 }
@@ -1205,6 +1209,10 @@
     "completion": "During the semester the Marketplace hours are as follows: Monday-Thursday 7am - 3pm and 4pm - 7:30pm. Friday-Sunday 7am - 3pm and 4pm - 7pm"
 }
 {
+    "prompt": "what are the hours of the cafeteria", 
+    "completion": "During the semester the Marketplace hours are as follows: Monday-Thursday 7am - 3pm and 4pm - 7:30pm. Friday-Sunday 7am - 3pm and 4pm - 7pm"
+}
+{
     "prompt": "What are the hours of the Jay's Nest", 
     "completion": "During the semester the Jay's Nest is open everyday from 7am - 12am"
 }
@@ -1262,6 +1270,14 @@
 }
 {
     "prompt": "What are the hours of the Bowers Center", 
+    "completion": "The Bowers Center is open Monday - Friday from 6 a.m. - 10 p.m. | Saturday 8 a.m. - 4 p.m. | Sunday 12 p.m. - 8 p.m."
+}
+{
+    "prompt": "What are the hours of the gym", 
+    "completion": "The Bowers Center is open Monday - Friday from 6 a.m. - 10 p.m. | Saturday 8 a.m. - 4 p.m. | Sunday 12 p.m. - 8 p.m."
+}
+{
+    "prompt": "What are the hours of the fitness center", 
     "completion": "The Bowers Center is open Monday - Friday from 6 a.m. - 10 p.m. | Saturday 8 a.m. - 4 p.m. | Sunday 12 p.m. - 8 p.m."
 }
 {
@@ -1479,6 +1495,10 @@
     I would also argue that he is right up there with Pizza Dave and Willy as top dining hall employees."
 }
 {
-    "prompt": "<prompt text>", 
-    "completion": "<ideal generated text>"
+    "prompt": "Who is the president of Elizabethtown college?", 
+    "completion": "The President of Elizabethtown college is Betty Rider"
+}
+{
+    "prompt": "Who is the president of Etown college?", 
+    "completion": "The President of Elizabethtown college is Betty Rider"
 }

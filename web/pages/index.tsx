@@ -45,7 +45,7 @@ export default function Home() {
       alert('Please input a question');
       return;
     }
-
+    const start = new Date().getTime();
     const question = query.trim(); //trim query
 
     //following code will connect to Mongodb and send user questions to the database
@@ -111,7 +111,8 @@ export default function Home() {
       console.log('messageState', messageState);
 
       setLoading(false);
-
+      let elapsed = new Date().getTime() - start;
+      console.log(elapsed);
       //scroll to bottom
       messageListRef.current?.scrollTo(0, messageListRef.current.scrollHeight);
     } catch (error) {
