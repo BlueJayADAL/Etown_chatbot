@@ -21,7 +21,7 @@ using System;
 using System.IO;
 using UnityEngine;
 using System.Collections.Generic;
-
+using UnityEngine.UI;
 // Saves and loads in Unity .wav files in the Application.persistentDataPath
 public class SaveLoadWav {
 	const int HEADER_SIZE = 44;
@@ -45,7 +45,7 @@ public class SaveLoadWav {
   }
 
   // Assigns the loaded audio clip to the source or does nothing if the argument filename or path is inexistend. Call this method inside the StartCoroutine of C#
-  public IEnumerator<WWW> Load(string filename, AudioSource audioSource){
+  public IEnumerator<WWW> Load(string filename, AudioSource audioSource, Text textField){
     if(!String.IsNullOrEmpty(filename) && audioSource != null){
       string path = GetPath(filename);
 
@@ -56,7 +56,7 @@ public class SaveLoadWav {
         audioSource.clip = www.GetAudioClip(false, false, AudioType.WAV);
 				audioSource.clip.name = filename;
                     audioSource.Play();
-
+					textField.text = "Audio Played!";
       }
     }
     yield break;

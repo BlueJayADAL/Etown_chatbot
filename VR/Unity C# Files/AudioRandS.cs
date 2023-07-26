@@ -25,9 +25,20 @@ public class AudioRandS : MonoBehaviour
     public GameObject light;
     public GameObject mic;
     public AudioSource wait;
+    private string ip;
+    private int port1;
+    private int port2;
 
     private byte[] receivedData = null;
     private byte[] Datamm = null;
+
+    private void Awake(){
+
+
+    ip = PlayerPrefs.GetString("ip");
+    port1 = PlayerPrefs.GetInt("port1");
+    port2 = PlayerPrefs.GetInt("port2");
+    }
 
     private void Update()
     {
@@ -97,8 +108,14 @@ public async void StopRecording()
     private async void SendAudioData(byte[] data)
     {
         // Socket configuration
-        string serverAddress = "35.245.154.81";
-        int serverPort = 45250;
+        string serverAddress;
+        int serverPort;
+        if(ip==null || ip =="" || ip ==" "||ip=="0"){
+        serverAddress = "35.245.154.81";}
+        else{serverAddress = ip;}
+        if(port1==null || port1 == 0){
+        serverPort = 45250;}
+        else{serverPort = port1;}
 
         try
         {
@@ -127,10 +144,15 @@ public async void StopRecording()
     }
     private async void ReceiveAudioData()
     {
+        string serverAddress;
+        int serverPort;
         // Socket configuration
-        string serverAddress = "35.245.154.81";
-        int serverPort = 45251;
-
+        if(ip==null || ip =="" || ip ==" " || ip=="0"){
+        serverAddress = "35.245.154.81";}
+        else{serverAddress = ip;}
+        if(port2==null || port2 == 0){
+        serverPort = 45251;}
+        else{serverPort = port2;}
         
         while(receivedData==null){
         try
