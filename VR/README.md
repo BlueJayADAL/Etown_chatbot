@@ -1,5 +1,10 @@
-### Setup the OpenAI API Key
-To use the OpenAI's API. Copy the file `Server/models/.env_example` to `Server/models/.ev` and update it with your API key.
+### The following are intructions on how to succesfully run Etown-ChatBot-VR
+Requirements are as following:
+- Python 3.11
+- An Oculus Quest 2
+- The ability to connect said Quest to a computer
+- A computer that can run a local hotspot and or the technical know how for being able to port forward over the internet
+  
 
 ### Download the Oculus APK
 https://elizabethtown-my.sharepoint.com/:f:/g/personal/stonerj_etown_edu/EohHW_9f3KVDjhSG1MORYpkBOHuYP9HBtofqrU27K3VpQw?e=baPNLx
