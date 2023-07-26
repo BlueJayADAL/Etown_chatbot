@@ -16,6 +16,7 @@ https://elizabethtown-my.sharepoint.com/:f:/g/personal/stonerj_etown_edu/EohHW_9
 
 ### Python Script
 - Download the .py file from Audio Processor
+- Download and set a path for ffmpeg: https://www.ffmpeg.org/
 - Download requirments from the .txt file
 - Run the python script in terminal of the computer the quest is connected to
 - Make note of the ip and ports that the program tells you
