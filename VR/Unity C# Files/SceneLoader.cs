@@ -53,34 +53,20 @@ public class SceneLoader : MonoBehaviour
         // Don't allow the scene to automatically activate upon loading
         UpdateLoadingScreen(number);
 
-        // While the scene is not yet loaded completely
-        
-            // Calculate the loading progress (0 to 1)
          
         loadingScreen.SetActive(false);
 
-            // Update the loading screen progress (e.g., update progress bar, loading text)
-       // cube.transform.position = targetPosition1;
-            // Check if the loading progress reaches a desired point before activating the scene
-     //   characterController.enabled = false;
-     //   characterController.enabled = true;
-      //  playerController.Teleported = true;
-     //   player.transform.position = teleportTarget.position;
+
          
         player.transform.Rotate(0f, 90f, 0f);
-    //    characterController.enabled = true;
-                // Hide the loading screen
 
-                // Allow the scene to activate
-      //    player.transform.position = teleportTarget.position;
         }
  
     
 
     private void UpdateLoadingScreen(float progress)
     {
-        // Update the loading screen UI based on the progress value
-        // You can update a progress bar, loading text, or any other relevant UI elements
+
         textField.text = Convert.ToInt32(progress).ToString()+"%";
     }
 
