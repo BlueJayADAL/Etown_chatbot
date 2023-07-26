@@ -15,25 +15,21 @@ sample_rate = 44100
 
 
 def TexttoSpeech(audiofile):
-    # The text that you want to convert to audio
+
     mytext = audiofile
   
-# Language in which you want to convert
+
     language = 'en'
   
-    # Passing the text and language to the engine, 
-    # here we have marked slow=False. Which tells 
-    # the module that the converted audio should 
-    #    have a high speed
+
     myobj = gTTS(text=mytext, lang=language, slow=False)
   
-    # Saving the converted audio in a mp3 file named
-    # welcome 
+ 
     myobj.save("sendfile.mp3")
     convert_mp3_to_wav("sendfile.mp3", "sendfile.wav")
-    # Playing the converted file
+
     return 
-    # Listens to mic input
+
 def convert_mp3_to_wav(src, dst):
     sound = AudioSegment.from_mp3(src)
     sound.export(dst, format="wav")
@@ -46,13 +42,11 @@ def listen( do_voice_input, use_encoded_responses, audiodata):
     
     pcm_samples = np.frombuffer(audiodata, dtype=np.int16)
 
-    # Convert PCM samples to float samples
     float_samples = pcm_samples.astype(np.float32) / 32767.0
     pcm_samples = [int(sample * 32767) for sample in float_samples]
     pcm_data = struct.pack('<' + 'h' * len(pcm_samples), *pcm_samples)
     recognizer = sr.Recognizer()
   
-    # Write PCM data to a temporary WAV file
     with wave.open('temp.wav', 'wb') as wav_file:
         wav_file.setnchannels(1)
         wav_file.setsampwidth(2)
@@ -99,14 +93,12 @@ def get_outward_ipv4():
 def get_local_ipv4():
     with socket.socket(socket.AF_INET, socket.SOCK_DGRAM) as s:
         try:
-            # Use a public DNS server to establish a connection
             s.connect(("8.8.8.8", 80))
             local_ip = s.getsockname()[0]
         except socket.error:
-            local_ip = "127.0.0.1"  # Default to localhost if connection fails
+            local_ip = "127.0.0.1" 
     return local_ip
 
-# Socket configuration
 ipv4 = get_outward_ipv4()
 HOST = get_local_ipv4()
 PORT = 45250
@@ -158,11 +150,9 @@ def main():
                 if not data:
                     break
                 audio_data += data
-            #print(audio_data)
 
             text= listen(True,False,audio_data)
             TexttoSpeech(text)
-        #   text = convert_audio_to_text(audio_data)
 
             print(f"Received audio: {text}")
             client_socket.close()
@@ -176,15 +166,15 @@ def main():
             client_socket, addr = server_socket.accept()
             print(f"Connection from {addr} established")
             with open("sendfile.wav", 'rb') as file:
-            # Read the contents of the file
                 file_data = file.read()
             file_size = len(file_data)
             
 
             print(str(file_size))    
-            # Send the file data to the client
             client_socket.sendall(file_data)
             client_socket.close()
+
+            
 def terminate_existing_process(port):
     for process in psutil.process_iter():
         try:

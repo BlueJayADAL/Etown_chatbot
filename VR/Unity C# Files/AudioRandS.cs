@@ -14,8 +14,7 @@ public class AudioRandS : MonoBehaviour
 {
     private const int SampleRate = 44100;
     private string wavFilePath; // Path to the .wav file
-  //  public AudioClip Clip;
-  //  public AudioSource audioSource;
+
     private const string OutputFileName = "recorded_audio.wav";
     public Text textField;
 
